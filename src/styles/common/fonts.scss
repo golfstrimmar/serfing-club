@@ -1,0 +1,334 @@
+
+
+// ========================================================================
+// использовать снипет    font  пере{ }од через табуляцию
+// ========================================================================
+@font-face {
+font-family: CeremoniousOne;
+src:
+local(CeremoniousOne),
+url('../fonts/CeremoniousOne.woff') format('woff'),
+url('../fonts/CeremoniousOne.ttf') format('truetype'),
+url('../fonts/CeremoniousOne}') format('embedded-opentype'),
+url('../fonts/CeremoniousOne.svg  ') format('svg'),
+url('../fonts/CeremoniousOne.otf  '),
+url('../fonts/CeremoniousOne.eot  ');
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+}
+
+// ======================================
+
+@font-face {
+font-family: LeagueSpartan;
+src:
+local(LeagueSpartan),
+url('../fonts/LeagueSpartan-Bold.woff') format('woff'),
+url('../fonts/LeagueSpartan-Bold.ttf') format('truetype'),
+url('../fonts/LeagueSpartan-Bold}') format('embedded-opentype'),
+url('../fonts/LeagueSpartan-Bold.svg  ') format('svg'),
+url('../fonts/LeagueSpartan-Bold.otf  '),
+url('../fonts/LeagueSpartan-Bold.eot  ');
+font-weight: bold;
+font-style: normal;
+font-stretch: normal;
+}
+
+@font-face {
+font-family: PlayfairDisplay;
+src:
+local(PlayfairDisplay-Regular),
+url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+url('../fonts/PlayfairDisplay-Regular}') format('embedded-opentype'),
+url('../fonts/PlayfairDisplay-Regular.svg  ') format('svg'),
+url('../fonts/PlayfairDisplay-Regular.otf  '),
+url('../fonts/PlayfairDisplay-Regular.eot  ');
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+}
+
+@font-face {
+font-family: PlayfairDisplay;
+src:
+local(PlayfairDisplay-Bold),
+url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+url('../fonts/PlayfairDisplay-Bold}') format('embedded-opentype'),
+url('../fonts/PlayfairDisplay-Bold.svg  ') format('svg'),
+url('../fonts/PlayfairDisplay-Bold.otf  '),
+url('../fonts/PlayfairDisplay-Bold.eot  ');
+font-weight: bold;
+font-style: normal;
+font-stretch: normal;
+}
+
+@font-face {
+font-family: Heavy Rock;
+src:
+local(Heavy Rock),
+url('../fonts/Heavy Rock.woff') format('woff'),
+url('../fonts/Heavy Rock.ttf') format('truetype'),
+url('../fonts/Heavy Rock}') format('embedded-opentype'),
+url('../fonts/Heavy Rockt.svg  ') format('svg'),
+url('../fonts/Heavy Rock.otf  '),
+url('../fonts/Heavy Rock.eot  ');
+font-weight: 300;
+font-style: normal;
+font-stretch: normal;
+}
+
+
+// ====================================
+@mixin Text-Style-3 {
+  font-family: PlayfairDisplay;
+  font-size: 62px;
+  font-weight: bold;
+  line-height: 1.03;
+  text-align: left;
+  color: #0b0c11;
+}
+@mixin Text-Style-10 {
+  font-family: PlayfairDisplay;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.57;
+  letter-spacing: 0.42px;
+  text-align: center;
+  color: #333333;
+}
+@mixin Text-Style-5 {
+  font-family: PlayfairDisplay;
+  font-size: 26px;
+  line-height: 1.46;
+  letter-spacing: 0.26px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.9);
+}
+@mixin Text-Style-12 {
+  font-family: PlayfairDisplay;
+  font-size: 26px;
+  line-height: 1.08;
+  letter-spacing: 0.26px;
+  text-align: left;
+  color: #333333;
+}
+@mixin Text-Style-13 {
+  font-family: Heavy Rock;
+;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  text-align: left;
+  color: #ce60a8;
+}
+@mixin Text-Style-7 {
+  font-family: Heavy Rock;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  letter-spacing: 0.35px;
+  text-align: left;
+  color: rgba(97, 97, 97, 0.65);
+}
+@mixin Text-Style-4 {
+  font-family: Heavy Rock;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  letter-spacing: 0.35px;
+  text-align: left;
+  color: #8f8f8f;
+}
+@mixin Text-Style-11 {
+  font-family: Heavy Rock;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 2.4px;
+  text-align: left;
+  color: #7a7a7a;
+}
+@mixin Text-Style-15 {
+  font-family: LeagueSpartan;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 7.33;
+  letter-spacing: 5.4px;
+  text-align: left;
+  color: rgba(51, 51, 51, 0.9);
+}
+@mixin Text-Style-16 {
+  font-family: LeagueSpartan;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 7.33;
+  letter-spacing: 5.4px;
+  text-align: left;
+  color: #5da8ef;
+}
+@mixin Text-Style-17 {
+  font-family: LeagueSpartan;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 7.33;
+  letter-spacing: 5.58px;
+  text-align: center;
+  color: rgba(11, 12, 17, 0.9);
+}
+@mixin Text-Style-2 {
+  font-family: LeagueSpartan;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 7.33;
+  letter-spacing: 5.4px;
+  text-align: left;
+  color: rgba(93, 168, 239, 0.9);
+}
+@mixin Text-Style-6 {
+  font-family: LeagueSpartan;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 7.33;
+  letter-spacing: 5.4px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.9);
+}
+@mixin Text-Style-8 {
+  font-family: LeagueSpartan;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 7.33;
+  letter-spacing: 5.4px;
+  text-align: center;
+  color: #333333;
+}
+@mixin Text-Style-14 {
+  font-family: LeagueSpartan;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 7.33;
+  letter-spacing: 5.4px;
+  text-align: left;
+  color: #333333;
+}
+@mixin Text-Style-9 {
+  font-family: LeagueSpartan;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 7.33;
+  letter-spacing: 5.4px;
+  text-align: center;
+  color: #5da8ef;
+}
+@mixin Text-Style {
+   font-family: LeagueSpartan;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 7.33;
+  letter-spacing: 5.58px;
+  text-align: left;
+  color: rgba(11, 12, 17, 0.9);
+
+}
+// =========================================================================
+@font-face {
+  font-family: icomoon;
+  src:
+    local(icomoon),
+    url('../fonts/icomoon.woff') format("woff"),
+    url('../fonts/icomoon.ttf') format("truetype"),
+    url("../fonts/icomoon}") format('embedded-opentype'),
+    url("../fonts/icomoon.svg  ") format("svg"),
+    url("../fonts/icomoon.otf  "),
+    url("../fonts/icomoon.eot  ");
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+
+.icomoon {
+  width: 100%;
+  height: 100%;
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  &:before {
+    position: absolute;
+    @include tr(-50%, -50%, 0px);
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+  }
+}
+
+
+.icon-multimedia-option1:before {
+  content: "\e900";
+}
+
+.icon-upload:before {
+  content: "\e901";
+}
+
+.icon-tools-and-utensils:before {
+  content: "\e902";
+}
+
+.icon-skip:before {
+  content: "\e904";
+}
+
+.icon-multimedia:before {
+  content: "\e905";
+}
+
+.icon-coin-dollar:before {
+  content: "\e93b";
+}
+
+.icon-coin-euro:before {
+  content: "\e93c";
+}
+
+.icon-coin-pound:before {
+  content: "\e93d";
+}
+
+.icon-coin-yen:before {
+  content: "\e93e";
+}
+
+.icon-cart:before {
+  content: "\e93a";
+}
+
+.icon-circle-down:before {
+  content: "\ea43";
+}
+
+.icon-star:before {
+  content: "\e906";
+}
+
+.icon-heart:before {
+  content: "\e907";
+}
+
+.icon-reload:before {
+  content: "\e908";
+}
+
+.icon-shopping-cart:before {
+  content: "\e903";
+}
+

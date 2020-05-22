@@ -1,0 +1,221 @@
+@import "normalize";
+@import "common/null.scss";
+@import "common/bootstrap-reboot.min.scss";
+
+@import "common/mixins";
+@import "common/variables";
+@import "common/fonts";
+@import "common/footer.scss";
+@import "common/header.scss";
+@import "common/slick.scss";
+
+
+@import "index/content/some-block.scss";
+
+// Bootstrap
+// @import "node_modules/bootstrap/scss/_functions";
+// @import "node_modules/bootstrap/scss/_variables";
+// @import "node_modules/bootstrap/scss/_mixins";
+// @import "node_modules/bootstrap/scss/_root";
+// @import "node_modules/bootstrap/scss/_reboot";
+// @import "node_modules/bootstrap/scss/_type";
+// @import "node_modules/bootstrap/scss/_images";
+// @import "node_modules/bootstrap/scss/_code";
+// @import "node_modules/bootstrap/scss/_grid";
+// @import "node_modules/bootstrap/scss/_tables";
+// @import "node_modules/bootstrap/scss/_forms";
+// @import "node_modules/bootstrap/scss/_buttons";
+// @import "node_modules/bootstrap/scss/_transitions";
+// @import "node_modules/bootstrap/scss/_dropdown";
+// @import "node_modules/bootstrap/scss/_button-group";
+// @import "node_modules/bootstrap/scss/_input-group";
+// @import "node_modules/bootstrap/scss/_custom-forms";
+// @import "node_modules/bootstrap/scss/_nav";
+// @import "node_modules/bootstrap/scss/_navbar";
+// @import "node_modules/bootstrap/scss/_card";
+// @import "node_modules/bootstrap/scss/_breadcrumb";
+// @import "node_modules/bootstrap/scss/_pagination";
+// @import "node_modules/bootstrap/scss/_badge";
+// @import "node_modules/bootstrap/scss/_jumbotron";
+// @import "node_modules/bootstrap/scss/_alert";
+// @import "node_modules/bootstrap/scss/_progress";
+// @import "node_modules/bootstrap/scss/_media";
+// @import "node_modules/bootstrap/scss/_list-group";
+// @import "node_modules/bootstrap/scss/_close";
+// @import "node_modules/bootstrap/scss/_toasts";
+// @import "node_modules/bootstrap/scss/_modal";
+// @import "node_modules/bootstrap/scss/_tooltip";
+// @import "node_modules/bootstrap/scss/_popover";
+// @import "node_modules/bootstrap/scss/_carousel";
+// @import "node_modules/bootstrap/scss/_spinners";
+// @import "node_modules/bootstrap/scss/_utilities";
+// @import "node_modules/bootstrap/scss/_print";
+
+
+// body{ background-color: #FF9419;}
+.wrapper {
+  overflow: hidden;
+  @include fdc;
+  min-height: 100vh;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  @include fdc();
+  background: url(../img/background_8.jpg) repeat;
+}
+.container {
+  outline: 1px solid #4164ff;
+  max-width: 1224px;
+  //    padding: 0px -15px;
+  margin: 0 auto;
+}
+
+.ibg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  img {
+    display: none;
+  }
+}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+a {
+  @include center();
+  width: 100%;
+  height: 100%;
+  &:hover {
+    cursor: pointer;
+    z-index: 5;
+  }
+}
+
+.img-svg {
+  width: 30px;
+  height: 30px;
+}
+
+.lock {
+  overflow: hidden;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+}
+.active{
+  opacity: 1;
+visibility: visible;
+
+ }
+
+//  -----------------------
+// ==========popup-thanks==============
+.popup-thanks {
+  background-color: #bb8830;
+  border: 2px solid red;
+display: none;
+  &__body {
+        position: fixed;
+min-width: 100%;
+min-height: 100vh;
+top: 0; left: 0;
+    background-color: #131f28;
+    z-index: 100000;
+    opacity: 0.9;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+   @include center();
+
+
+
+  }
+  &__header {
+flex: 0 1 20%;
+@media screen and (max-width: 1000px) {
+ flex: 0 1 50%; 
+}
+@media screen and (max-width: 380px) {
+ flex: 0 1 100%;
+}
+  }
+
+}
+
+// ------ шапка--------------------
+.header-popup-thanks {
+  &__body {  
+@include jucc();
+background-color: #e74c45;
+position: relative;
+}
+  &__burger {  
+position: absolute;
+width: 25px;
+height: 25px; 
+top: 0; 
+right: 0;
+background-color: #FF9419;
+span{
+  width: 20px; 
+  height: 2px;
+  background-color: #000; 
+  position: absolute;
+left: 0;
+  top: 50% ;
+  transform: translate(0%,-50%); 
+  @include rotate(45deg);
+ 
+&:last-child{
+@include rotate(-45deg);
+ 
+}
+
+ }
+
+}
+
+&__icon {
+    background-color: #bee1ff;
+    flex: 0 1 100%;
+    padding: 10px 0px 10px 0px;
+  }
+
+  &__title {
+    background-color: #3dbbff;
+    flex: 0 1 80%;
+    font-family: Lobster-Regular;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+  }
+
+  &__text {
+    background-color: #246eb9;
+    flex: 0 1 100%;
+    font-family: Lobster-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left; 
+    padding: 30px 20px 50px 20px;
+  }
+}
+
+

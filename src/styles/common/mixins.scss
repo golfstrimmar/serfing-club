@@ -1,0 +1,118 @@
+@import "common/variables";
+
+// ========================================================
+@mixin anim($time) {
+   transition: all $time ease-in;
+   -webkit-transition: all $time ease-in;
+   -moz-transition: all $time ease-in;
+   -ms-transition: all $time ease-in;
+   -o-transition: all $time ease-in;
+}
+
+
+@mixin tr($x, $y, $z) {
+   transform: translate3d($x, $y, $z);
+   -webkit-transform: translate3d($x, $y, $z);
+   -moz-transform: translate3d($x, $y, $z);
+   -ms-transform: translate3d($x, $y, $z);
+   -o-transform: translate3d($x, $y, $z);
+}
+
+
+@mixin rotate($deg){ transform: rotate($deg) ; -webkit-transform: rotate($deg) ; -moz-transform: rotate($deg) ; -ms-transform: rotate($deg) ; -o-transform: rotate($deg) ;
+}
+
+@mixin scale($num){ transform: scale($num) ; -webkit-transform: scale($num) ; -moz-transform: scale($num) ; -ms-transform: scale($num) ; -o-transform: scale($num) ;
+}
+
+// ======================================================
+
+@mixin flex {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+@mixin fdc {
+   display: flex;
+   flex-direction: column;
+}
+
+@mixin center {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+
+@mixin jucc {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+@mixin jucs {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+}
+
+@mixin juce {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+}
+
+@mixin jucb {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+@mixin juca {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+@mixin alis {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+}
+
+@mixin alie {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+}
+
+@mixin alic {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+@mixin alistretch {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: stretch;
+}
+
+@mixin alib {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: baseline;
+}
+
+@mixin alisc {
+   display: flex;
+   flex-wrap: wrap;
+   align-self: center;
+}
+
+
+
+
+
+
