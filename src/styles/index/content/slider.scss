@@ -1,0 +1,135 @@
+.slider {
+  &__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // margin: 0px auto;
+    // padding: 20px 0px 20px 0px;
+    // background-color: #d24a4c;
+
+  }
+
+  &__plaza {
+  }
+  &__arrows {
+  }
+}
+
+.plaza-slider {
+  &__body {
+  }
+
+  &__item {
+  }
+
+  &__arrows {
+    background-color: #282f35;
+  }
+}
+
+.item-plaza-slider {
+  border: 2px solid #d4b584; 
+  @media screen and (max-width: 1224px) {
+   padding: 0px 0px 0px 20px;
+  }
+  &__body {
+    @include flex();
+    position: relative;
+    padding: 200px 0px 212px 0px;
+    @media screen and (max-width: 400px) {
+      padding: 150px 0px 150px 0px;   
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    width: 83%;
+    height: 100%;
+    top: 100%; 
+    transform: translate(0%, -100%);
+    right: 0;
+  }
+  &__text {
+    flex: 0 1 100%;
+    z-index: 2;
+    // background-color: #d24a4c;
+
+    p {
+      text-align: left;
+    }
+    &_blue {
+      p {
+        @include Text-Style-2;
+        line-height: 1;
+      }
+    }
+    &_big {
+      padding: 17px 0px 0px 0px;
+      p {
+        @include Text-Style-3;
+        line-height: 1;
+        @media screen and (max-width: 400px) {
+         font-size: 30px;
+        }
+      }
+    }
+    &_grey {
+      padding: 22px 0px 0px 0px;
+      flex: 0 1 31.61%;
+      @media screen and (max-width: 980px) {
+       flex: 0 1 60%; 
+      }
+@media screen and (max-width: 570px) {
+ flex: 0 1 100%; 
+ padding: 22px 20px 0px 0px;
+}
+      p {
+        @include Text-Style-4;
+      }
+    }
+  }
+}
+
+
+.slick-dots{
+      padding-inline-start: 0px !important;
+
+    position: absolute;
+width: 100%;
+height:100%;
+top :100%;
+transform: translate(5%,-12px);   
+// left: -34px;
+    @include flex();
+    z-index: 3;
+    @media screen and (max-width: 900px) {
+     left: 0;
+    } 
+}  
+
+.slick-dots li button{
+list-style: none;
+margin: 0px 5px 0px 0px;
+ font-family: LeagueSpartan;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 4px;
+color: #000; 
+background-color: transparent;
+
+}
+.slick-dots li.slick-active{
+position: relative;
+ button{
+font-family: LeagueSpartan;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #5da8ef; 
+ }}
+   

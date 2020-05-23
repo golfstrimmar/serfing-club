@@ -10,7 +10,8 @@
 @import "common/slick.scss";
 
 
-@import "index/content/some-block.scss";
+// @import "index/content/some-block.scss";
+@import "index/content/slider.scss";
 
 // Bootstrap
 // @import "node_modules/bootstrap/scss/_functions";
@@ -65,8 +66,10 @@
   min-height: 100%;
   top: 0;
   left: 0;
+  // z-index: 2000;
   @include fdc();
-  background: url(../img/background_8.jpg) repeat;
+ background: url(../img/bg/lines.jpg)  no-repeat;
+background-size: cover;
 }
 .container {
   outline: 1px solid #4164ff;

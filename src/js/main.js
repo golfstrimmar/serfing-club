@@ -18,6 +18,7 @@ function ibg() {
 ibg();
 
 // -------------burger----------------------
+
 $(Document).ready(function () {
   $(".icon-menu").click(function (event) {
     $(this).toggleClass("active"),
@@ -34,6 +35,7 @@ document.documentElement.addEventListener("click", function (e) {
     $("body").removeClass("lock");
   }
 });
+
 // --------------burger-thanks---------------------
 document.documentElement.addEventListener("click", function (e) {
     $(".popup-thanks").fadeOut(300);

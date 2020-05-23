@@ -37,6 +37,7 @@
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+     
 }
 
 .slick-track {
@@ -99,4 +100,48 @@
     display: none;
 }
 .slick-slide {
- text-align: center;}
+ text-align: center;
+position: relative;}
+
+// .slick-dots{
+//       padding-inline-start: 0px !important;
+
+//     position: absolute;
+// width: 100%;
+// height:100%;
+// top :100%;
+// transform: translate(5%,-12px);   
+// // left: -34px;
+//     @include flex();
+//     z-index: 3;
+//     @media screen and (max-width: 900px) {
+//      left: 0;
+//     } 
+// }  
+
+// .slick-dots li button{
+// list-style: none;
+// margin: 0px 5px 0px 0px;
+//  font-family: LeagueSpartan;
+//   font-size: 10px;
+//   font-weight: bold;
+//   font-stretch: normal;
+//   font-style: normal;
+//   letter-spacing: 4px;
+// color: #000; 
+// background-color: transparent;
+
+// }
+// .slick-dots li.slick-active{
+// position: relative;
+//  button{
+// font-family: LeagueSpartan;
+//   font-size: 10px;
+//   font-weight: bold;
+//   font-stretch: normal;
+//   font-style: normal;
+//   letter-spacing: 4px;
+//   text-align: center;
+//   color: #5da8ef; 
+//  }}
+   
