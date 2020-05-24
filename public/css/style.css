@@ -1173,19 +1173,15 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: relative;
-    padding: 200px 0px 212px 0px; }
-    @media screen and (max-width: 400px) {
-      .item-plaza-slider__body {
-        padding: 150px 0px 150px 0px; } }
+    padding: 16% 0px 17.5% 0px; }
   .item-plaza-slider__bg {
     position: absolute;
     width: 83%;
     height: 100%;
-    top: 100%;
-    -webkit-transform: translate(0%, -100%);
-    -ms-transform: translate(0%, -100%);
-    transform: translate(0%, -100%);
-    right: 0; }
+    top: 0%;
+    right: 0;
+    -webkit-box-shadow: -5px 5px 20px  #A3A3A3;
+    box-shadow: -5px 5px 20px  #A3A3A3; }
   .item-plaza-slider__text {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 100%;
