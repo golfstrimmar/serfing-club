@@ -224,10 +224,341 @@
 }
 
 // ---------------------------------------------------------
-// ++++++++++++++++++++++  block-1 +++++++++++++++++++++++++++++++++++
-// ---------------------------------------------------------
+// ==============tiny=====================
+// =======================================
+.tiny{
+width: 100%;
+height: 100%;
+  &__body {  
+position: relative;
+text-align: left;
+@include flex();
+
+}
+// &__bg { 
+// position: absolute;
+// top: 0;  
+// left: 0; 
+// width: 100%;
+// padding: 0px 0px 10% 0px;   
+// }
+ 
+&__icon {  
+position: relative;
+  z-index: 2;
+  flex: 0 1 100%;
+  background-color: #246EB9; opacity: 0.8;
+
+}
+
+&__title {  
+position: relative;
+  z-index: 2;
+background-color: #9FFF0F;
+opacity: 0.8;
+flex: 0 1 100%;
+}
+
+&__text {  
+ position: relative;
+  z-index: 2;
+  flex: 0 1 100%;
+&_one {  
+background-color: red;opacity: 0.8;
+}
+&_two {  
+background-color: #193549;opacity: 0.8;
+}
+&_three {  
+background-color: #E628FF;opacity: 0.8;
+}
+&_four {  
+background-color: #FF9419;opacity: 0.8;
+}
+}
+
+&__button {  
+background-color: #d24a4c;opacity: 0.8; 
+position: relative;
+  z-index: 2;
+ flex: 0 1 100%; 
+a{
+  @include jucs(); 
+}   
+  span{
+  background-color: #9e9e9e;
+
+}}}
 
 
+
+// ====================================================
+//                  slider-top                             
+// ====================================================
+.container-top {
+  max-width: 960px;
+  // max-width: 100vw; 
+  margin: 0px auto;
+  outline: 4px solid #d24a4c;
+@media screen and (max-width: 960px) {
+  max-width: 100vw; 
+}
+
+}
+.slider-top {
+  width: 100%;height: 100%;
+  &__body {
+  @include jucc();
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  &__head {
+
+}
+&__arrows{ } 
+// ---------------------------------------------------------------
+//  !!!!!!!!!управление шириной содержимого  одного слайда!!!!!!!!!!!!!!!!!!
+&__slide {
+    // max-width: 200px;
+    max-width: 80%; 
+  }
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// ---------------------------------------------------------------- 
+ 
+&__slides {  
+outline: 2px solid #d4b584;
+
+}
+}
+
+// ---------------------------------------------------------------
+// !!!!!!!!!! управление расположением содержимого слайда!!!!!!!!!!!
+.slick-slide {
+  // text-align: left;
+  // text-align: center;
+  // text-align: right ;
+ background-color: #a9afb3; 
+  border: 2px solid #d4b584;
+  flex: 0 1 20%;
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// ---------------------------------------------
+
+// =============шапка слайдера=============================
+.head-tiny{
+@include jucc();
+width: 100%;height: 100%;
+// !!!!!!!!!!!!!управление шириной шапки слайдера!!!!!!!!!!!!!!!!!!!!!!!
+&__body {  
+position: relative;
+text-align: left;
+@include flex();
+flex: 0 1 50%;  
+
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// &__bg { 
+// position: absolute;
+// top: 0;  
+// left: 0; 
+// width: 100%;
+// padding: 0px 0px 10% 0px;   
+// }
+ 
+&__icon {  
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+background-color: #246EB9; opacity: 0.8;
+@include Text-Style-9;
+}
+
+&__title {  
+position: relative;
+z-index: 2;
+background-color: #9FFF0F;opacity: 0.8;
+flex: 0 1 100%;
+@include Text-Style-9;
+}
+
+&__text {  
+ position: relative;
+  z-index: 2;
+  flex: 0 1 100%;
+&_one {  
+background-color: red;opacity: 0.8;
+@include Text-Style-9;
+}
+&_two {  
+background-color: #193549;opacity: 0.8;
+@include Text-Style-9;
+}
+&_three {  
+background-color: #E628FF;opacity: 0.8;
+@include Text-Style-9;
+}
+&_four {  
+background-color: #FF9419;opacity: 0.8;
+@include Text-Style-9;
+}
+}
+
+&__button {  
+background-color: #d24a4c;opacity: 0.8; 
+position: relative;
+  z-index: 2;
+ flex: 0 1 100%; 
+a{
+  @include jucs(); 
+}   
+  span{
+background-color: #9e9e9e;
+}}}
+
+// ===========================================
+.slider-top-tiny {
+  width: 100%;height: 100%;
+  &__body {
+    position: relative;
+    text-align: left;
+    @include flex();
+  }
+  // &__bg {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // padding: 0px 0px 10% 0px;
+  // }
+
+  &__icon {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    background-color: #246eb9;
+    opacity: 0.8;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    background-color: #9fff0f;
+    opacity: 0.8;
+    flex: 0 1 100%;
+    @include Text-Style-8;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    &_one {
+      background-color: red;
+      opacity: 0.8;
+      @include Text-Style-8;
+    }
+    &_two {
+      background-color: #193549;
+      opacity: 0.8;
+      @include Text-Style-8;
+    }
+    &_three {
+      background-color: #e628ff;
+      opacity: 0.8;
+      @include Text-Style-8;
+    }
+    &_four {
+      background-color: #ff9419;
+      opacity: 0.8;
+      @include Text-Style-8;
+    }
+  }
+
+  &__button {
+    background-color: #d24a4c;
+    opacity: 0.8;
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    a {
+      @include jucs();
+    }
+    span {
+      background-color: #9e9e9e;
+      @include Text-Style-8;
+    }
+  }
+}
+
+.arrows-slider-top{
+  // @include flex(); 
+  background-color: #246EB9; 
+  flex: 0 1 100%;
+  @include juca();
+  
+  &__arrow {  
+   position: absolute;
+width: 30px;
+height: 30px;
+top: 57%;
+  
+background-color: #D4B584; 
+  &_prev { 
+ left: -5%;
+}
+&_next {  
+right: -5%;
+}
+ }}
+
+ .slick-dots{
+      padding-inline-start: 0px !important;
+
+    position: absolute;
+width: 100%;
+height:100%;
+top :100%;
+transform: translate(5%,-12px);   
+// left: -34px;
+    @include flex();
+    z-index: 3;
+    @media screen and (max-width: 900px) {
+     left: 0;
+    } 
+}  
+
+.slick-dots li button{
+list-style: none;
+margin: 0px 5px 0px 0px;
+ font-family: LeagueSpartan;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 4px;
+color: #000; 
+background-color: transparent;
+
+}
+.slick-dots li.slick-active{
+position: relative;
+ button{
+font-family: LeagueSpartan;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #5da8ef; 
+  
+ }}
+ 
+// ====================================================
+//                  end of slider-top                      
+// ====================================================
 
 // ===========================================
 // ============== slider1 =====================

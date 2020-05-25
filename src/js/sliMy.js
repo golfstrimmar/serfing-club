@@ -1,5 +1,3 @@
-
-
 $(Document).ready(function () {
   $(".slider-js").slick({
     arrows: false,
@@ -43,21 +41,22 @@ $(Document).ready(function () {
 
 
     $(Document).ready(function () {
-      $(".sliderbords-js").slick({
+      $(".slider-shop-js").slick({
         arrows: true,
-        dots: false,
-        slidesToShow: 3,     
+        // dots: true,   
+        
+        slidesToShow: 3,
         // infinite: false,
         slideToscroll: 1,
         speed: 800, 
-        easing: "ease",
+        // easing: "ease",
         adapitveHeight: true,  
         rows: 1,
-        // nextArrow: $(".control-slider-lots__arrow_next"),
-        // prevArrow: $(".control-slider-lots__arrow_prev"),
+        nextArrow: $(".arrows-slider-shop__arrow_prev"),
+        prevArrow: $(".arrows-slider-shop__arrow_next"),
         responsive: [
           {
-            breakpoint: 819,
+            breakpoint: 960,
             settings: {
               // arrows: false,
 
@@ -75,36 +74,4 @@ $(Document).ready(function () {
         ],
       });
     });  
-    // $(Document).ready(function () {
-    //   $(".slider1-js").slick({
-    //     arrows: true,
-    //     dots: false,
-    //     slidesToShow: 1,     
-    //     // infinite: false,
-    //     slideToscroll: 1,
-    //     speed: 800, 
-    //     easing: "ease",
-    //     adapitveHeight: true,  
-    //     rows: 1,
-    //     // nextArrow: $(".control-slider-lots__arrow_next"),
-    //     // prevArrow: $(".control-slider-lots__arrow_prev"),
-    //     responsive: [
-    //       {
-    //         breakpoint: 819,
-    //         settings: {
-    //           // arrows: false,
 
-    //           slidesToShow: 2,
-    //         },
-    //       },
-    //       {
-    //         breakpoint: 620,
-    //         settings: {
-    //           // arrows: false,
-    //           // centerPadding: "40px",
-    //           slidesToShow: 1,
-    //         },
-    //       },
-    //     ],
-    //   });
-    // });  

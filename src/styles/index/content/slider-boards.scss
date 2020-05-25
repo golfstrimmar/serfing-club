@@ -1,163 +1,133 @@
+@import "common/mixins";
+@import "common/variables";
 
 
 
-.block-slider {
-  outline: 2px solid #4e3710;
-   min-width: 100%; 
-    height: 100%;
-  &__body {
-    @include flex();
-    min-width: 100%; 
-    height: 100%;
-    
-  }
-  &__item {
-flex: 0 1 57%; 
-// flex: 0 1 100%;
-    outline: 2px solid #d4b584;
-    position: relative;
- padding: 0px 0px 112% 0px;   
-margin: 0px 50px 0px 0px;
-  }
-}
- 
-
-.item-small { 
- position: absolute;
-width: 60%;  
-height:100%;
-top: 50%;
-left: 53%;   
-}
-
-.slider-container{ 
+// ====================================================
+//                  slider-shop                             
+// ====================================================
+.container-top {
   max-width: 1224px;
-  margin: 0 auto;
+  // max-width: 100vw; 
+  margin: 0px auto;
+  outline: 4px solid #d24a4c;
+@media screen and (max-width: 960px) {
+  max-width: 100vw; 
 }
 
-.tiny1{
+}
+.slider-shop {
+  width: 100%;
+  height: 100%;
+  &__body {
+  @include jucc();
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 196px 0px 0px 0px;
+  }
+  &__head {
+
+}
+&__arrows{ } 
+// ---------------------------------------------------------------
+//  !!!!!!!!!управление шириной содержимого  одного слайда!!!!!!!!!!!!!!!!!!
+&__slide {
+    max-width: 250px;
+    // max-width: 60%;  
+  }
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// ---------------------------------------------------------------- 
+ 
+&__slides {  
+outline: 2px solid #d4b584;
 width: 100%;
 height: 100%;
-  &__body {  
-position: relative;
-text-align: left;
-@include flex();
-  
 }
-&__bg {
-   padding: 0px 0px 200% 0px;     
-  position: absolute;
+}
+
+// ---------------------------------------------------------------
+// !!!!!!!!!! управление расположением содержимого слайда!!!!!!!!!!!
+.slick-slide {
+  text-align: left;
+  // text-align: center;
+  // text-align: right ;
+ background-color: #a9afb3; 
+  border: 2px solid #d4b584;
+  flex: 0 1 20%;
+  @media screen and (max-width: 620px) {
+   text-align: center;
+  }
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// ---------------------------------------------
+.slider-shop-slide{
+  width: 100%;
+  height: 100%;
+&__body { 
+   
+position: relative;
+width: 100%; 
+height: 100%;
+// @include flex();
+padding: 0px 0px 196% 0px;
+}
+&__main {  
+  
+// flex: 0 1 100%;
 width: 100%;
-top: 0; left: 0;
+height: 100%;
 }
+&__small {  
+position: absolute;
+width: 50%; 
+height: 100%; 
+top: 50%;
+left: 86%; 
 
+@media screen and (max-width: 1224px) {
+ left: 50%;
 }
-
-.tiny2{
-
-  &__body {  
+@media screen and (max-width: 620px) {
+ top: 1%; 
+ left: 40%;
+}
+}
+ }
+// =============шапка слайдера=============================
+.head-tiny{
+@include jucc();
+width: 100%;
+height: 100%;
+// !!!!!!!!!!!!!управление шириной шапки слайдера!!!!!!!!!!!!!!!!!!!!!!!
+&__body {  
 position: relative;
 text-align: left;
 @include flex();
- 
+flex: 0 1 50%;  
+
 }
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  
 &__icon {  
 position: relative;
-  z-index: 2;
-  flex: 0 1 100%;
-  background-color: #246EB9; opacity: 0.8;
-
+z-index: 2;
+flex: 0 1 100%;
+background-color: #246EB9; opacity: 0.8;
+@include Text-Style-9;
 }
 
 &__title {  
 position: relative;
-  z-index: 2;
-background-color: #9FFF0F;
-opacity: 0.8;
+z-index: 2;
+background-color: #9FFF0F;opacity: 0.8;
 flex: 0 1 100%;
-@include Text-Style-11;
-
-}
-
-&__text {  
- position: relative;
-  z-index: 2;
-  flex: 0 1 100%;
-&_one {  
-background-color: red;opacity: 0.8;
-@include Text-Style-12;
-
-}
-&_two {  
-background-color: #193549;opacity: 0.8; 
-@include Text-Style-13;
-margin: 50px 0px 0px 20%;
-}
-
-}
-
-&__button {  
-background-color: #d24a4c;opacity: 0.8; 
-position: relative;
-  z-index: 2;
- flex: 0 1 100%; 
-a{
-  @include jucs(); 
-  
-}   
-  span{
-  background-color: #9e9e9e;
-@include Text-Style-14;
+@include Text-Style-9;
+line-height: 1; 
 text-transform: uppercase;
-line-height: 1;
-padding: 5px 0px 5px 3px;
-margin: 0px 0px 0px 20%;
-}}}
-
-
-
-
-
-
-
-
-
-
- // =======================================
-// ==============tiny=====================
-// =======================================
-.tiny{
-width: 100%;height: 100%;
-  &__body {  
-position: relative;
-text-align: left;
-@include flex();
- 
-}
-// &__bg { 
-// position: absolute;
-// top: 0;  
-// left: 0; 
-// width: 100%;
-// padding: 0px 0px 10% 0px;   
-// }
- 
-&__icon {  
-position: relative;
-  z-index: 2;
-  flex: 0 1 100%;
-  background-color: #246EB9; opacity: 0.8;
 
 }
 
-&__title {  
-position: relative;
-  z-index: 2;
-background-color: #9FFF0F;
-opacity: 0.8;
-flex: 0 1 100%;
-}
 
 &__text {  
  position: relative;
@@ -165,199 +135,117 @@ flex: 0 1 100%;
   flex: 0 1 100%;
 &_one {  
 background-color: red;opacity: 0.8;
+@include Text-Style-10;
+line-height: 1;
 }
-&_two {  
-background-color: #193549;opacity: 0.8;
+} }
+// ===========================================
+.slider-shop-tiny {
+  width: 100%;
+  height: 100%;
+  &__body {
+    position: relative;
+    text-align: left;
+    @include flex();
+  }
+  // &__bg {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // padding: 0px 0px 10% 0px;
+  // }
+
+  &__icon {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    background-color: #246eb9;
+    opacity: 0.8;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    background-color: #9fff0f;
+    opacity: 0.8;
+    flex: 0 1 100%;
+    @include Text-Style-11;
+    text-transform: uppercase;
+ padding: 5% 0px 0px 0px; 
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    &_one {
+      background-color: red;
+      opacity: 0.8;
+      @include Text-Style-12;
+      padding: 1% 0px 0px 0px;
+    }
+    &_two {
+      background-color: #193549;
+      opacity: 0.8;
+      @include Text-Style-13;
+      padding: 14% 0px 0px 0px;
+       margin: 0px 0px 0px 30%;
+    }
+
+  }
+
+  &__button {
+    background-color: #d24a4c;
+    opacity: 0.8;
+    position: relative;
+    z-index: 2;
+    flex: 0 1 15%;  
+     margin: 0px 0px 0px 30%;     
+    a {
+      @include jucs();
+    }
+    span {
+      background-color: #9e9e9e;
+      @include Text-Style-14;
+      line-height: 1;
+      text-transform: uppercase;
+       
+      padding: 5px 0px 3px 5px; 
+
+    }
+  }
 }
-&_three {  
-background-color: #E628FF;opacity: 0.8;
+
+.arrows-slider-shop{
+  // @include flex(); 
+  background-color: #246EB9; 
+  flex: 0 1 100%;
+  @include juca();
+  
+  &__arrow {  
+   position: absolute;
+width: 30px;
+height: 30px;
+top: 66%; 
+transform: translate(0%,-50%);
+  
+background-color: #D4B584; 
+  &_prev { 
+ left: -5%;
+ @media screen and (max-width: 1280px) {
+  left: 1%;
+ }
 }
-&_four {  
-background-color: #FF9419;opacity: 0.8;
+&_next {  
+right: -5%;
+@media screen and (max-width: 1280px) {
+  right: 1%;
+ }
 }
-}
+ }}
 
-&__button {  
-background-color: #d24a4c;opacity: 0.8; 
-position: relative;
-  z-index: 2;
- flex: 0 1 100%; 
-a{
-  @include jucs(); 
-}   
-  span{
-  background-color: #9e9e9e;
-
-}}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .sliderbords {
-//   &__body {
-//     position: relative;
-//     min-width: 100%;
-//     height: 100%;
-//     margin: 0px auto;
-//     padding: 20px 0px 20px 0px;
-//     background-color: #d24a4c;
-//   }
-
-//   &__header {
-//   }
-//   &__plaza {
-//   }
-//   &__arrows {
-//   } 
-// }
-
-// .header-sliderbords {
-//   text-align: center;
-//   &__title {
-//    @include Text-Style-9;
-
-//   }
-
-//   &__text {
-//  @include Text-Style-10;
-//  line-height: 1;
-//   }
-// }
-// .plaza-sliderbords {
-//   background-color: #9e9e9e;
-//   &__body {
-//   //  @include jucb(); 
-//   }
-
-//   &__item {
-//     flex: 0 1 20%;  
-//     margin: 0px 100% 0px 0px;  
-//   } 
-
-//   &__arrows {
-//     background-color: #282f35;
-//   }
-// }
-
-// .item-plaza-sliderbords {
-//   &__body {
-//     // @include fdc();
-//   @include flex(); 
-//   position: relative;
-//   }
-
-//   &__img {
-//   flex: 0 1 50%;
-//   padding: 0px 0px 100% 0px; 
-//     border: 2px solid #d4b584;
-//   }
-
-//   &__text {
-//     flex: 0 1 50%; 
-// }
-// .arrows-slider {
-//   @include jucc();
-//   span {
-//     @include flex();
-//     height: 30px;
-//     font-size: 30px;
-//     background-color: #b29c69;
-//   }
-//   &__prev {
-//     flex: 0 1 20%;
-//   }
-
-//   &__next {
-//     flex: 0 1 20%;
-//   }
-// }
-
-
-// // ------------------
-// .sliderbords-sence {
-//   outline: 2px solid #4e3710; 
-//   &__body {
-//     @include flex();
-//   }
-//   &__item {
-//     flex: 0 1 20%;
-//     outline: 2px solid #d4b584;
-//   }
-// }
-
-// // -------------------
-// .sliderbords-sence {  
-
-//   position: absolute;
-// width: 77%; 
-// top: 52%; 
-// left: 89%; 
-
-//   &__body {
-//     background-color: #4e3710;
-//     @include flex();
-//     position: relative;
-
-//   }
  
-//   &__title {
-//     background-color: #64c29e;
-//     opacity: 0.8;
-//     flex: 0 1 100%;
-//   @include Text-Style-11;   
-// line-height: 1;
-// text-transform: uppercase; 
-//   }
-//   &__text {
-//     background-color: #848789;
-//     opacity: 0.8;
-//     flex: 0 1 100%;
-//   @include Text-Style-12; 
-//   padding: 10px 0px 0px 0px; 
-//   &_small {  
-//      flex: 0 1 100%;
-// @include Text-Style-13; 
-// margin: 0px 0px 0px 28%;
-// padding: 40px 0px 0px 0px;  
-// }
-
-// }
-//   &__button { 
-//     flex: 0 1 20%;
-//     opacity: 0.8;
-//     z-index: 2; 
-//  margin: 0px 0px 0px 28%; 
-
-//     span {
-//       @include Text-Style-14; 
-//       text-transform: uppercase; 
-//       line-height: 2; 
-//       width: 100%;
-//       height: 100%;
-//       @include anim(0.2s); 
-//   padding: 5px 0px 0px 5px; 
-//   &:hover{ 
-//     color: #CCE4F7; 
-//    }
-//     }  
-//   }
-// }
+// ====================================================
+//                  end of slider-shop                      
+// ====================================================
