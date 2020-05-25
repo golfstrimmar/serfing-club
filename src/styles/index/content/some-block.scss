@@ -19,7 +19,7 @@
 // ---------------------------------------------------------
 .blockkk {
   background-color: #bb8830;
-  border: 2px solid red;
+  outline: 2px solid red;
 
   &__body {
     position: relative;
@@ -28,37 +28,30 @@
     margin: 0px auto;
     background-color: #5c4317;
     text-align: center;
-    padding: 20px 0px 20px 0px;
     @include flex();
     flex-wrap: wrap;
   }
   &__header {
-flex: 0 1 100%;
-
+    flex: 0 1 100%;
   }
   &__plaza {
-flex: 0 1 100%;
+    flex: 0 1 100%;
   }
   &__button {
     flex: 0 1 30%;
-    margin: 20px 0px 0px 0px;
   }
 }
 
 // ------ шапка--------------------
 .header-blockkk {
-  &__body {  
-
-
-}
+  &__body {
+  }
   &__icon {
     background-color: #bee1ff;
   }
 
   &__title {
     background-color: #3dbbff;
-    
-
   }
 
   &__text {
@@ -70,67 +63,64 @@ flex: 0 1 100%;
 .plaza-blockkk {
   &__body {
     background-color: #ff9419;
-    @include flex();  
+    @include flex();
     width: 100%;
     height: 100%;
- 
   }
   &__item {
-    border: 2px solid aqua;
-    flex: 0 1 20%;
-       @media screen and (max-width: 600px) {
- flex: 0 1 100%;
+    outline: 2px solid aqua;
+    flex: 0 1 100%;
+    @media screen and (max-width: 600px) {
+      flex: 0 1 100%;
     }
     &_duble {
       flex: 0 1 100%;
-           @media screen and (max-width: 600px) {
- flex: 0 1 100%;
-    }
+      @media screen and (max-width: 600px) {
+        flex: 0 1 100%;
+      }
     }
   }
 }
 // ---------- единичный блок---------------------------
 .item-plaza-blockkk {
   background-color: #193549;
-  &__body {  
-@include jucc();
-flex-wrap: wrap;
+  &__body {
+    @include jucc();
+    flex-wrap: wrap;
+  }
+  &__item {
+    flex: 0 1 100%;
 
-	}
-  &__item {  
-flex: 0 1 100%;
- 
-&_icon {
-    background-color: #bee1ff;
+    &_icon {
+      background-color: #bee1ff;
+    }
+    &_title {
+      background-color: #9e9e9e;
+
+      flex: 0 1 100%;
+      font-family: Lobster-Regular;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: left;
+    }
+    &_text {
+      background-color: #b29c69;
+      font-family: Lobster-Regular;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: left;
+    }
+    &_button {
+    }
   }
-  &_title {
-    background-color: #9e9e9e;
-    
-    flex: 0 1 50%;
-    font-family: Lobster-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
-    text-align: left;
-  }
-  &_text {
-    background-color: #b29c69;
-    font-family: Lobster-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
-    text-align: left;
-  }
-  &_button {
-    margin: 10px 0px;
-  }
-}
 }
 // ----------двойной единичный блок ---------------------------
 .item-plaza-blockkk-duble {
@@ -140,9 +130,9 @@ flex: 0 1 100%;
     @include jucc();
   }
   &__left {
-    flex: 0 1 60%;
+    flex: 0 1 80%;
     @media screen and (max-width: 600px) {
-     flex: 0 1 100%;
+      flex: 0 1 100%;
     }
   }
   &__right {
@@ -151,17 +141,17 @@ flex: 0 1 100%;
 }
 
 .right-blockkk-duble {
-  border: 2px solid #a6afff;
+  outline: 2px solid #a6afff;
   &__body {
     width: 100%;
     height: 100%;
-   @include jucc(); 
+    @include jucc();
   }
   &__head {
     background-color: #6e6e6e;
     flex: 0 1 100%;
 
-     font-family: Lobster-Regular;
+    font-family: Lobster-Regular;
     font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
@@ -172,9 +162,9 @@ flex: 0 1 100%;
   }
   &__foot {
     background-color: #856f3c;
-    flex: 0 1 30%;
+    flex: 0 1 100%;
 
-     font-family: Lobster-Regular;
+    font-family: Lobster-Regular;
     font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
@@ -188,7 +178,7 @@ flex: 0 1 100%;
 // ---------------------------------------------
 .button-item-plaza-blockkk,
 .button-left-item-plaza-blockkk-duble {
-  border: 2px solid #4d2342;
+  outline: 2px solid #4d2342;
   background-color: #3ad900;
   @include anim(0.2s);
   padding: 5px 0px 5px 0px;
@@ -208,13 +198,14 @@ flex: 0 1 100%;
 }
 
 .button-blockkk {
-  border: 2px solid #4d2342;
+  outline: 2px solid #4d2342;
   background-color: #dc4c2f;
   @include anim(0.2s);
   margin: 0px auto;
   span {
-    width: 100%;height: 100%;
-    background-color: #9FFF0F;
+    width: 100%;
+    height: 100%;
+    background-color: #9fff0f;
     padding: 20px 10px;
     font-family: Lobster-Regular;
     font-size: 15px;
@@ -224,11 +215,10 @@ flex: 0 1 100%;
     line-height: 1.67;
     letter-spacing: normal;
     @include anim(0.2s);
-   
   }
   &:hover {
     span {
-    background-color: #64c29e;
+      background-color: #64c29e;
     }
   }
 }
@@ -236,45 +226,8 @@ flex: 0 1 100%;
 // ---------------------------------------------------------
 // ++++++++++++++++++++++  block-1 +++++++++++++++++++++++++++++++++++
 // ---------------------------------------------------------
-.block-1 {
-  &__body {
-    padding: 50px 0px 0px 0px;
-    @include flex();
-  }
-  &__item {
-    flex: 0 1 20%;
-    border: 2px solid #d4b584;
-  }
-}
-.item-block-1 {
-  &__body {
-    @include jucb();
-    background-color: red;
-  }
-  &__left {
-    background-color: #193549;
-    width: 80%;
-    flex: 0 1 80%;
 
-    height: 100%;
-    padding: 250px 0px 0px 0px;
-  }
-  &__right {
-    background-color: #e628ff;
-    flex: 0 1 20%;
 
-    height: auto;
-    @include fdc();
-    &_high {
-      background-color: #246eb9;
-      flex: 0 1 20%;
-    }
-    &_low {
-      background-color: #4e3710;
-      flex: 0 1 80%;
-    }
-  }
-}
 
 // ===========================================
 // ============== slider1 =====================
@@ -595,7 +548,6 @@ flex: 0 1 100%;
   }
 
   &__forma {
-
   }
 
   &__text {
@@ -635,25 +587,29 @@ flex: 0 1 100%;
     border: 2px solid #d4b584;
     flex: 0 1 100%;
     background-color: #64c29e;
-    label{
-      background-color: #FF9419; 
+    label {
+      background-color: #ff9419;
     }
     input {
       padding: 10px 0px 10px 5px;
       width: 100%;
       height: 100%;
-      @include anim(0.2s); 
+      @include anim(0.2s);
     }
     &:hover {
-      input {background-color: #dedece;}
-      textarea{ background-color: #dedece;}
+      input {
+        background-color: #dedece;
+      }
+      textarea {
+        background-color: #dedece;
+      }
     }
- 
-    textarea{ 
+
+    textarea {
       padding: 0px 0px 0px 5px;
       width: 100%;
       height: 100%;
-      @include anim(0.2s); 
+      @include anim(0.2s);
     }
 
     &_name {
@@ -671,7 +627,8 @@ flex: 0 1 100%;
     }
     &_radio {
     }
-    &_textarea{ }
+    &_textarea {
+    }
     &_button {
       @include jucc();
       text-align: center;
@@ -709,8 +666,6 @@ flex: 0 1 100%;
   }
 }
 
-
-
 // =====================================================
 // ============== форма космонавт ===================
 // =====================================================
@@ -727,14 +682,12 @@ flex: 0 1 100%;
     text-align: center;
     padding: 20px 0px 20px 0px;
     @include flex();
-   
   }
   &__header {
-flex: 0 1 100%;
-
+    flex: 0 1 100%;
   }
   &__plaza {
-flex: 0 1 100%;
+    flex: 0 1 100%;
   }
   &__button {
     flex: 0 1 30%;
@@ -748,20 +701,18 @@ flex: 0 1 100%;
 
   &__icon {
     background-color: #bee1ff;
-    width: 30px;height: 30px;
-
+    width: 30px;
+    height: 30px;
   }
 
   &__title {
     background-color: #3dbbff;
     flex: 0 1 100%;
-
   }
 
   &__text {
     background-color: #246eb9;
     flex: 0 1 100%;
-
   }
 }
 
@@ -773,12 +724,10 @@ flex: 0 1 100%;
     @include flex();
     width: 100%;
     height: 100%;
- 
   }
   &__item {
     border: 2px solid aqua;
-   flex: 0 1 100%;
-
+    flex: 0 1 100%;
   }
 }
 // ---------- единичный блок---------------------------
@@ -788,12 +737,14 @@ flex: 0 1 100%;
   @include center();
 
   position: relative;
-&__icon {
+  &__icon {
     //  flex: 0 1 100%;
-   
-background-color: #FF9419;
+
+    background-color: #ff9419;
   }
- span{ position: relative;z-index: 2;
+  span {
+    position: relative;
+    z-index: 2;
     font-family: Lobster-Regular;
     font-size: 25px;
     font-weight: normal;
@@ -801,18 +752,18 @@ background-color: #FF9419;
     font-style: normal;
     line-height: 1.67;
     letter-spacing: normal;
-   color: red;
-}
-&__text {  
-  font-family: Lobster-Regular;
+    color: red;
+  }
+  &__text {
+    font-family: Lobster-Regular;
     font-size: 25px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.67;
     letter-spacing: normal;
-   color: blue;
-}
+    color: blue;
+  }
 }
 // ----------двойной единичный блок ---------------------------
 .item-plaza-feedback-duble {
@@ -822,15 +773,15 @@ background-color: #FF9419;
   &__left {
     // flex: 0 1 29%;
     width: 300px;
-     @media screen and (max-width: 678px) {
-   padding: 0px 0px 250px 0px;
-   margin: 0px auto;
-}
+    @media screen and (max-width: 678px) {
+      padding: 0px 0px 250px 0px;
+      margin: 0px auto;
+    }
   }
   &__right {
     flex: 0 1 50%;
     @media screen and (max-width: 678px) {
-     flex: 0 1 100%;
+      flex: 0 1 100%;
     }
   }
 }
@@ -838,17 +789,17 @@ background-color: #FF9419;
 .right-duble {
   border: 2px solid #a6afff;
   &__body {
-    @include jucc(); 
+    @include jucc();
   }
   &__head {
     background-color: #6e6e6e;
-flex: 0 1 100%;
+    flex: 0 1 100%;
   }
   &__foot {
     width: 300px;
-    
+
     background-color: #856f3c;
-     font-family: Lobster-Regular;
+    font-family: Lobster-Regular;
     font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
@@ -858,13 +809,9 @@ flex: 0 1 100%;
   }
 }
 
-
-
-
 // ---------------------------------
 // ========== каскад====================
 // =====================================
-
 
 .cascade {
   background-color: #bb8830;
@@ -878,14 +825,12 @@ flex: 0 1 100%;
     background-color: #5c4317;
     text-align: center;
     padding: 20px 10px 20px 10px;
-
   }
   &__header {
-flex: 0 1 100%;
-
+    flex: 0 1 100%;
   }
   &__plaza {
-flex: 0 1 100%;
+    flex: 0 1 100%;
   }
 }
 
@@ -908,68 +853,62 @@ flex: 0 1 100%;
 .plaza-cascade {
   &__body {
     background-color: #ff9419;
-   @include jucb();  
+    @include jucb();
     width: 100%;
     height: 100%;
     @media screen and (max-width: 800px) {
-     @include fdc();
-@include alic();
+      @include fdc();
+      @include alic();
     }
-
   }
   &__item {
     border: 2px solid aqua;
     width: 160px;
     @media screen and (max-width: 800px) {
-     margin: 20px 0px 20px 0px;
-     
+      margin: 20px 0px 20px 0px;
     }
-    &:last-child{
+    &:last-child {
       width: 112px;
 
-      .right-cascade-duble{
+      .right-cascade-duble {
         display: none;
-   
       }
-      .cascade-duble__left{
+      .cascade-duble__left {
         flex: 0 1 100%;
-}
-    }}
+      }
+    }
   }
-
- 
-  
+}
 
 // ---------- единичный блок---------------------------
 .item-plaza-cascade {
   background-color: #193549;
-  &__body {  
-@include jucc();
-flex-wrap: wrap;
+  &__body {
+    @include jucc();
+    flex-wrap: wrap;
+  }
+  &__item {
+    flex: 0 1 100%;
 
-	}
-  &__item {  
-flex: 0 1 100%;
- 
-&_icon {
-    background-color: #bee1ff;
-  }
+    &_icon {
+      background-color: #bee1ff;
+    }
 
-  &_text {
-    background-color: #b29c69;
-    font-family: Lobster-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
-    text-align: left;
+    &_text {
+      background-color: #b29c69;
+      font-family: Lobster-Regular;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: left;
+    }
+    &_button {
+      margin: 10px 0px;
+    }
   }
-  &_button {
-    margin: 10px 0px;
-  }
-}
 }
 // ----------двойной единичный блок ---------------------------
 .cascade-duble {
@@ -980,10 +919,9 @@ flex: 0 1 100%;
   }
   &__left {
     flex: 0 1 71%;
-@media screen and (max-width: 800px) {
- flex: 0 1 100%;
-
-}
+    @media screen and (max-width: 800px) {
+      flex: 0 1 100%;
+    }
   }
   // &__right {
   //   flex: 0 1 20%;
@@ -993,109 +931,108 @@ flex: 0 1 100%;
 .right-cascade-duble {
   border: 2px solid #a6afff;
   padding: 10px 5px 0px 5px;
-flex: 0 1 20%;
+  flex: 0 1 20%;
 }
 
 // =================================
 // ============== poup акция =====https://www.youtube.com/watch?v=rIb0OoNWDEs==============
 // .popup-action {
-  
+
 // 	width: 100%;
 // 	height: 100vh;
 // background-color: #848789;
 //   // z-index: 1000;
 
-//   
+//
 // }
 
 .button-pop {
-
-	border-radius: 3px;
-	background-color: #ff5252;
-	text-align: center;
+  border-radius: 3px;
+  background-color: #ff5252;
+  text-align: center;
   cursor: pointer;
   padding: 20px 0px 20px 0px;
-transition: all 0.2s ease;
-} 
+  transition: all 0.2s ease;
+}
 
 .button-pop span {
-   font-family: Lobster-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
-	color: #fff;
+  font-family: Lobster-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #fff;
 
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .overlay {
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
   left: 0;
-   z-index: 1000;
-	background-color: rgba(0, 0, 0, 0.9);
-	display: none;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
 }
 
 .popup {
-	position: absolute;
-	width: 400px;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	padding: 40px;
-	box-sizing: border-box;
-	background-color: #ff5252;
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #ff5252;
   color: #fff;
   // z-index: 1000;
 }
 
 .close-popup {
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	width: 23px;
-	height: 23px;
-	cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
 }
 
 .close-popup:before {
-	content: '';
-	background-color: #fff;
-	position: absolute;
-	height: 1px;
-	width: 31px;
-	top: 11px;
-	left: -4px;
-	transform: rotate(-45deg);
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
 }
 
 .close-popup:after {
-	content: '';
-	background-color: #fff;
-	position: absolute;
-	height: 1px;
-	width: 31px;
-	top: 11px;
-	transform: rotate(45deg);
-	left: -4px;
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  transform: rotate(45deg);
+  left: -4px;
 }
 
 @media screen and (max-width: 768px) {
-
-	.popup {
-		width: 100%;
-		height: 100vh;
-		font-size: 15px;
-	}
+  .popup {
+    width: 100%;
+    height: 100vh;
+    font-size: 15px;
+  }
 }
 
 // ------------------------------------
-.eTimer{
-  width: 500px;height: 50px;
- }
+.eTimer {
+  width: 500px;
+  height: 50px;
+}
