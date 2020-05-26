@@ -865,8 +865,6 @@ flex: 0 1 100%;
   
 &_one {  
 background-color: red;opacity: 0.8;
-position: relative;
-z-index: 2;
 flex: 0 1 100%;
 @include Text-Style-9;
 line-height: 1; 
@@ -874,8 +872,6 @@ text-transform: uppercase;
 }
 &_two {  
 background-color: #193549;opacity: 0.8;
-position: relative;
-z-index: 2;
 flex: 0 1 100%;
 @include Text-Style-9;
 line-height: 1; 
@@ -883,8 +879,6 @@ text-transform: uppercase;
 }
 &_three {  
 background-color: #E628FF;opacity: 0.8;
-position: relative;
-z-index: 2;
 flex: 0 1 100%;
 @include Text-Style-9;
 line-height: 1; 
@@ -892,8 +886,6 @@ text-transform: uppercase;
 }
 &_four {  
 background-color: #FF9419;opacity: 0.8;
-position: relative;
-z-index: 2;
 flex: 0 1 100%;
 @include Text-Style-9;
 line-height: 1; 
@@ -912,6 +904,11 @@ a{
 }   
   span{
   background-color: #9e9e9e;
+  width: 100%;
+  height: 100%;
+  &:hover{
+    background-color: #d24a4c;
+  }
 @include Text-Style-9;
 line-height: 1; 
 text-transform: uppercase;
@@ -1122,18 +1119,19 @@ text-transform: uppercase;
 // +++++++++++++++++++ link-2  +++++++++++++++++++
 // -----------------------------------------------
 .link-2 {
-  @include flex();
-  // background-color: #9fff0f;
-  padding: 0px 0px 0px 0px;
-
+  @include jucc();
+  @include alic(); 
   &__body {
-    // background-color: #246eb9;
-    border: 2px solid #d4b584;
-    // flex: 0 1 99%;
-    // padding: 10px 0px 10px 0px;
+    // border: 2px solid #d4b584; 
+    flex: 0 1 48%; 
+     @media screen and (max-width: 828px) {
+       flex: 0 1 100%; 
+       padding: 50px 20px 0px 20px;
+      }
     width: 100%;
     height: 100%;
     text-align: center;
+    padding: 50px 0px 0px 0px;
   }
   &__form {
   }
@@ -1142,81 +1140,74 @@ text-transform: uppercase;
 .form-link-2 {
   @include jucb();
   @include alic();
-  // background-color: #bee1ff;
+  @media screen and (max-width: 350px) {
+   @include jucc();
+  }
   &__input {
-    // padding: 10px 0px 10px 0px;
-    // background-color: #826c41;
-    flex: 0 1 80%;
-
-    input {
-      // border: 6px solid #222429;
+    width: 100%;
+    height: 100%;
+  
+    &_mail {
+      flex: 0 1 80%;
+      @media screen and (max-width: 828px) {
+       flex: 0 1 80%; 
+      }
+      @media screen and (max-width: 350px) {
+        flex: 0 1 100%;
+        margin: 0% 0% 10% 0%;
+      }
+      background-color: #64c29e;
+     input{  
       border: none;
+      // border: 6px solid #222429;
+      width: 100%;
+      height: 50px; 
       outline: none;
       text-indent: 26px;
-      width: 100%;
-      height: 100%;
-      padding: 10px 0px;
-      // background-color: #d24a4c;
+      height: 50px;
+      background-color: #f5f5f5;
       @include anim(0.2s);
-      font-family: Lobster-Regular;
-      font-size: 20px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.67;
-      letter-spacing: normal;
+     @include Text-Style-15;
       text-transform: uppercase;
-      color: #000;
+      line-height: 1;
       &:hover {
         background-color: #d4b584;
       }
+     }
     }
-  }
-  &__submit {
+  
+    &_submit {
     @include center();
     @include anim(0.1s);
-    // background-color: #64c29e;
-    height: 100%;
-    padding: 0px 0px 0px 20px;
+    background-color: #64c29e;
     position: relative;
-    &:after {
-      content: "";
-      background-color: #b29c69;
-      position: absolute;
-      width: 32px;
-      height: 1px;
-      left: -5px;
-      z-index: 2;
-      top: 50%;
-      @include rotate(90deg);
-    }
+    flex: 0 1 50px;
+
     img {
-      width: 100%;
-      height: 100%;
+        position: absolute;
+        width: 10px; 
+        height: 18px;   
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%,-50%); 
     }
     input {
       width: 100%;
-      height: 100%;
-      padding: 15px 5px 15px 10px;
-
+      height: 50px;
+      background-color: #5da8ef;
+      // border: 6px solid #222429;  
       border: none;
-      text-transform: uppercase;
-      @include anim(0.2s);
-      font-family: Lobster-Regular;
-      font-size: 20px;
-      font-weight: 500;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.19;
-      letter-spacing: 2.12px;
-      color: #000;
-      // font-size: 20px;
+      @include anim(0.2s); 
       &:hover {
         background-color: #d4b584;
       }
+  
     }
+    
+  }
   }
 }
+
 
 // =========================================================
 // ===================form main============================
