@@ -1,0 +1,119 @@
+@import "common/mixins";
+@import "common/variables";
+
+ 
+.block-trips{ 
+  &__body{
+     position: relative;
+     @include jucc();
+     width: 100%;
+     height: 100%;
+  }
+
+// ----------ширина контента-----
+  &__content {  
+position: relative;
+flex: 0 1 100%;
+
+}
+  }
+
+
+// ---------управление единичными блоками---------------------
+.content-trips{
+  &__body {  
+position: relative;
+@include jucb();
+width: 100%;
+height: 100%; 
+padding: 0px 0px 0px 6%; 
+}
+// ----ширина единичного блока-----
+&__item {  
+flex: 0 1 24%; 
+}
+
+&__serfer{ 
+  flex: 0 1 66%; 
+padding: 38% 0px 0px 0px; 
+}
+}
+.serfer{
+position: relative; 
+ }
+
+// =====единичный блок=========
+
+.tiny-trips{
+width: 100%;
+height: 100%;
+  &__body {  
+position: relative;
+text-align: left;
+@include flex();
+padding: 30% 0px 0px 0px;  
+position: relative;
+&:after {
+            content: "";
+             background-color: #5da8ef;
+           position: absolute;
+           width: 22px;
+            height: 2px;
+            top: 42%; 
+            left: 0;
+            z-index: 2;
+
+      }
+}
+
+
+&__title {  
+background-color: #9FFF0F;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-18; 
+line-height: 1; 
+}
+
+&__text {  
+position: relative;
+z-index: 2;
+background-color: #9FFF0F;opacity: 0.8;
+flex: 0 1 100%;
+  
+&_one {  
+background-color: red;opacity: 0.8;
+flex: 0 1 100%;
+@include Text-Style-7;  
+line-height: 1; 
+text-transform: uppercase;
+padding: 20% 0px 0px 0px;
+}
+
+
+&__button {  
+background-color: #d24a4c;opacity: 0.8; 
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+
+a{
+  @include jucc();
+}   
+  span{
+  background-color: #9e9e9e;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}}}
+}
+
+.button-item-plaza-discription{ 
+  &_training {  
+margin: 2% 0px 0px 0px;
+}
+}
+// =======================================================
+//               end of   block-trips                           
+// =======================================================

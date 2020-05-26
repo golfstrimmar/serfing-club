@@ -1,0 +1,94 @@
+.tiny{
+width: 100%;
+height: 100%;
+  &__body {  
+position: relative;
+text-align: left;
+@include flex();
+
+}
+// &__bg { 
+// position: absolute;
+// top: 0;  
+// left: 0; 
+// width: 100%;
+// padding: 0px 0px 10% 0px;   
+// }
+ 
+&__icon {  
+position: relative;
+  z-index: 2;
+  flex: 0 1 100%;
+  background-color: #246EB9; opacity: 0.8;
+
+}
+
+&__title {  
+background-color: #9FFF0F;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+
+&__text {  
+position: relative;
+z-index: 2;
+background-color: #9FFF0F;opacity: 0.8;
+flex: 0 1 100%;
+  
+&_one {  
+background-color: red;opacity: 0.8;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_two {  
+background-color: #193549;opacity: 0.8;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_three {  
+background-color: #E628FF;opacity: 0.8;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_four {  
+background-color: #FF9419;opacity: 0.8;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+}
+
+&__button {  
+background-color: #d24a4c;opacity: 0.8; 
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+
+a{
+  @include jucc();
+}   
+  span{
+  background-color: #9e9e9e;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}}}

@@ -82,6 +82,17 @@ font-stretch: normal;
 
 
 // ====================================
+@mixin Text-Style-18 {
+  font-family: PlayfairDisplay;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.57;
+  letter-spacing: 0.42px;
+  text-align: left;
+  color: #333333;
+}
+
+
 @mixin Text-Style-3 {
   font-family: PlayfairDisplay;
   font-size: 62px;

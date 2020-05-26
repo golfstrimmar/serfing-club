@@ -224,79 +224,92 @@
 }
 
 // ---------------------------------------------------------
-// ==============tiny=====================
-// =======================================
-.tiny{
-width: 100%;
-height: 100%;
-  &__body {  
-position: relative;
-text-align: left;
-@include flex();
+// ++++++++++++++++++++++  block-1 +++++++++++++++++++++++++++++++++++
+// ---------------------------------------------------------
+.block-1 {
+  outline: 2px solid #4e3710;
+  &__body {
+    @include flex();
+  }
+  &__item {
+    flex: 0 1 20%;
+    outline: 2px solid #d4b584;
+  }
+}
+.item-block-1 {
+  &__body {
+    @include jucb();
+    background-color: red;
+  }
+  &__left {
+    background-color: #193549;
+    width: 80%;
+    flex: 0 1 80%;
+    height: 100%;
+  }
+  &__right {
+    background-color: #e628ff;
+    flex: 0 1 20%;
 
+    height: auto;
+    @include fdc();
+    &_high {
+      background-color: #193549;
+      flex: 0 1 20%;
+    }
+    &_low {
+      background-color: #e628ff;
+      flex: 0 1 80%;
+    }
+  }
 }
-// &__bg { 
-// position: absolute;
-// top: 0;  
-// left: 0; 
-// width: 100%;
-// padding: 0px 0px 10% 0px;   
-// }
- 
-&__icon {  
-position: relative;
-  z-index: 2;
-  flex: 0 1 100%;
-  background-color: #246EB9; opacity: 0.8;
+// -------------------
+.left-block-1 {
+  &__body {
+    background-color: #4e3710;
+    @include flex();
+    position: relative;
+  }
+  &__bg {
+  
+  }
+  &__icon {
+    background-color: #246eb9;
+    opacity: 0.8;
 
+    flex: 0 1 100%;
+    z-index: 2;
+  }
+  &__title {
+    background-color: #64c29e;
+    opacity: 0.8;
+    flex: 0 1 100%;
+    z-index: 2;
+  }
+  &__text {
+    background-color: #848789;
+    opacity: 0.8;
+    flex: 0 1 100%;
+    z-index: 2;
+  }
+  &__button {
+    flex: 0 1 20%;
+    background-color: #9fff0f;
+    opacity: 0.8;
+    z-index: 2;
+    span {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
-
-&__title {  
-position: relative;
-  z-index: 2;
-background-color: #9FFF0F;
-opacity: 0.8;
-flex: 0 1 100%;
-}
-
-&__text {  
- position: relative;
-  z-index: 2;
-  flex: 0 1 100%;
-&_one {  
-background-color: red;opacity: 0.8;
-}
-&_two {  
-background-color: #193549;opacity: 0.8;
-}
-&_three {  
-background-color: #E628FF;opacity: 0.8;
-}
-&_four {  
-background-color: #FF9419;opacity: 0.8;
-}
-}
-
-&__button {  
-background-color: #d24a4c;opacity: 0.8; 
-position: relative;
-  z-index: 2;
- flex: 0 1 100%; 
-a{
-  @include jucs(); 
-}   
-  span{
-  background-color: #9e9e9e;
-
-}}}
-
 
 
 // ====================================================
 //                  slider-top                             
 // ====================================================
 .container-top {
-  max-width: 960px;
+  max-width: 950px;
   // max-width: 100vw; 
   margin: 0px auto;
   outline: 4px solid #d24a4c;
@@ -372,15 +385,16 @@ position: relative;
 z-index: 2;
 flex: 0 1 100%;
 background-color: #246EB9; opacity: 0.8;
-@include Text-Style-9;
 }
 
 &__title {  
 position: relative;
 z-index: 2;
-background-color: #9FFF0F;opacity: 0.8;
 flex: 0 1 100%;
 @include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+background-color: #9FFF0F;opacity: 0.8;
 }
 
 &__text {  
@@ -389,19 +403,31 @@ flex: 0 1 100%;
   flex: 0 1 100%;
 &_one {  
 background-color: red;opacity: 0.8;
+flex: 0 1 100%;
 @include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
 }
 &_two {  
 background-color: #193549;opacity: 0.8;
+flex: 0 1 100%;
 @include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
 }
 &_three {  
 background-color: #E628FF;opacity: 0.8;
+flex: 0 1 100%;
 @include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
 }
 &_four {  
 background-color: #FF9419;opacity: 0.8;
+flex: 0 1 100%;
 @include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
 }
 }
 
@@ -415,6 +441,9 @@ a{
 }   
   span{
 background-color: #9e9e9e;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
 }}}
 
 // ===========================================
@@ -442,12 +471,13 @@ background-color: #9e9e9e;
   }
 
   &__title {
-    position: relative;
-    z-index: 2;
+   position: relative;
     background-color: #9fff0f;
     opacity: 0.8;
     flex: 0 1 100%;
-    @include Text-Style-8;
+    @include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
   }
 
   &__text {
@@ -457,22 +487,33 @@ background-color: #9e9e9e;
     &_one {
       background-color: red;
       opacity: 0.8;
-      @include Text-Style-8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
     }
     &_two {
       background-color: #193549;
-      opacity: 0.8;
-      @include Text-Style-8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
     }
     &_three {
       background-color: #e628ff;
       opacity: 0.8;
-      @include Text-Style-8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
     }
     &_four {
       background-color: #ff9419;
       opacity: 0.8;
-      @include Text-Style-8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
     }
   }
 
@@ -487,7 +528,10 @@ background-color: #9e9e9e;
     }
     span {
       background-color: #9e9e9e;
-      @include Text-Style-8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
     }
   }
 }
@@ -560,6 +604,319 @@ font-family: LeagueSpartan;
 //                  end of slider-top                      
 // ====================================================
 
+
+// =======================================================
+//                  block-trips                           
+// =======================================================
+.block-trips{ 
+  &__body{
+     position: relative;
+     @include jucc();
+     width: 100%;
+     height: 100%;
+  }
+//  --------ширина шапки--------
+  &__head{
+    position: relative;
+    flex: 0 1 80%;
+  }
+// ----------ширина контента-----
+  &__content {  
+position: relative;
+flex: 0 1 100%;
+
+}
+  }
+// ----------------шапка блока---------------------
+.tiny-trips-head{
+
+  &__body {  
+position: relative;
+text-align: left;
+@include flex();
+
+}
+// &__bg { 
+// position: absolute;
+// top: 0;  
+// left: 0; 
+// width: 100%;
+// padding: 0px 0px 10% 0px;   
+// }
+ 
+&__icon {  
+position: relative;
+  z-index: 2;
+  flex: 0 1 100%;
+  background-color: #246EB9; opacity: 0.8;
+
+}
+
+&__title {  
+background-color: #9FFF0F;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+
+&__text {  
+position: relative;
+z-index: 2;
+background-color: #9FFF0F;opacity: 0.8;
+flex: 0 1 100%;
+
+
+&_one {  
+background-color: red;opacity: 0.8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_two {  
+background-color: #193549;opacity: 0.8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_three {  
+background-color: #E628FF;opacity: 0.8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_four {  
+background-color: #FF9419;opacity: 0.8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+}
+
+&__button {  
+background-color: #d24a4c;opacity: 0.8; 
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+
+a{
+  @include jucc();
+}   
+  span{
+  background-color: #9e9e9e;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}}}
+
+// ---------управление единичными блоками---------------------
+.content-trips{
+  &__body {  
+position: relative;
+@include jucb();
+}
+// ----ширина единичного блока-----
+&__item {  
+flex: 0 1 20%;
+}
+}
+
+// =====единичный блок=========
+
+.tiny-trips{
+width: 100%;
+height: 100%;
+  &__body {  
+position: relative;
+text-align: left;
+@include flex();
+
+}
+// &__bg { 
+// position: absolute;
+// top: 0;  
+// left: 0; 
+// width: 100%;
+// padding: 0px 0px 10% 0px;   
+// }
+ 
+&__icon {  
+position: relative;
+  z-index: 2;
+  flex: 0 1 100%;
+  background-color: #246EB9; opacity: 0.8;
+
+}
+
+&__title {  
+background-color: #9FFF0F;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+
+&__text {  
+position: relative;
+z-index: 2;
+background-color: #9FFF0F;opacity: 0.8;
+flex: 0 1 100%;
+  
+&_one {  
+background-color: red;opacity: 0.8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_two {  
+background-color: #193549;opacity: 0.8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_three {  
+background-color: #E628FF;opacity: 0.8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_four {  
+background-color: #FF9419;opacity: 0.8;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+}
+
+&__button {  
+background-color: #d24a4c;opacity: 0.8; 
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+
+a{
+  @include jucc();
+}   
+  span{
+  background-color: #9e9e9e;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}}}
+// =======================================================
+//               end of   block-trips                           
+// =======================================================
+
+
+// ==============tiny=====================
+// =======================================
+.tiny{
+width: 100%;
+height: 100%;
+  &__body {  
+position: relative;
+text-align: left;
+@include flex();
+
+}
+// &__bg { 
+// position: absolute;
+// top: 0;  
+// left: 0; 
+// width: 100%;
+// padding: 0px 0px 10% 0px;   
+// }
+ 
+&__icon {  
+position: relative;
+  z-index: 2;
+  flex: 0 1 100%;
+  background-color: #246EB9; opacity: 0.8;
+
+}
+
+&__title {  
+background-color: #9FFF0F;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+
+&__text {  
+position: relative;
+z-index: 2;
+background-color: #9FFF0F;opacity: 0.8;
+flex: 0 1 100%;
+  
+&_one {  
+background-color: red;opacity: 0.8;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_two {  
+background-color: #193549;opacity: 0.8;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_three {  
+background-color: #E628FF;opacity: 0.8;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_four {  
+background-color: #FF9419;opacity: 0.8;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+}
+
+&__button {  
+background-color: #d24a4c;opacity: 0.8; 
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+
+a{
+  @include jucc();
+}   
+  span{
+  background-color: #9e9e9e;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}}}
+
 // ===========================================
 // ============== slider1 =====================
 // ============================================
@@ -585,24 +942,22 @@ font-family: LeagueSpartan;
 .header-slider1 {
   text-align: center;
   &__title {
-    font-family: Lobster-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
+   position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
     background-color: #246eb9;
   }
 
   &__text {
-    font-family: Lobster-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
+   position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
     background-color: #64c29e;
   }
 }
@@ -638,13 +993,12 @@ font-family: LeagueSpartan;
     background-color: #d24a4c;
     padding: 20px 0px 0px 0px;
     p {
-      font-family: Lobster-Regular;
-      font-size: 15px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.67;
-      letter-spacing: normal;
+     position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
       background-color: #d24a4c;
     }
   }

@@ -13,6 +13,9 @@
 @import "index/content/slider.scss";
 @import "index/content/discription.scss";
 @import "index/content/slider-boards.scss";
+@import "index/content/training.scss";
+@import "index/content/breack.scss";
+@import "index/content/contacts.scss";
 
 // Bootstrap
 // @import "node_modules/bootstrap/scss/_functions";
@@ -59,6 +62,7 @@
   overflow: hidden;
   @include fdc;
   min-height: 100vh;
+  
 }
 
 .page {
@@ -69,7 +73,7 @@
   left: 0;
   // z-index: 2000;
   @include fdc();
- background: url(../img/bg/lines.jpg)  no-repeat;
+ background: url(../img/bg/lines.jpg)  no-repeat;     
 background-size: cover;
 }
 .container {
