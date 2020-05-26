@@ -11,7 +11,25 @@
     height: 100%;  
     margin: 0px auto;
     background-color: #5c4317;
-    padding: 14% 0px 20% 0px;  
+    padding: 14% 0px 3% 0px; 
+    @media screen and (max-width: 1130px) {
+     padding: 8% 0px 3% 0px;  
+    } 
+    @media screen and (max-width: 880px) {
+          padding: 8% 0px 80% 0px;    
+
+    } 
+    @media screen and (max-width: 570px) {
+               padding: 8% 0px 90% 0px;      
+
+    }
+    @media screen and (max-width: 430px) {
+                    padding: 8% 0px 120% 0px;        
+    }
+    @media screen and (max-width: 250px) {
+                         padding: 8% 0px 150% 0px;         
+
+    }
     @include flex();
     flex-wrap: wrap;
   }
@@ -40,17 +58,20 @@ padding: 0px 0px 15.5% 0px;
            position: absolute;
            width: 2px;
             height: 100px; 
+            @media screen and (max-width: 840px) {
+             height: 50px; 
+             top: 70%; 
+            }
+            @media screen and (max-width: 420px) {
+             height: 20px; 
+              top: 80%; 
+            }
             top: 50%; 
             left: 0;
             z-index: 2;
-//bottom: 0;
-//right: 0;
-//top: -50%;
+
 left: 50%;
 @include tr(-50%,0px,0px);
-//@include rotate(45deg);
-//transform: translate3d(-50%, 0px, 0px) rotate(45deg);
-//@include anim(0.2s);
       }
 
 }
@@ -58,15 +79,16 @@ left: 50%;
   &__title {
     background-color: #3dbbff;
     flex: 0 1 49.83%; 
-
       @include Text-Style-5;
-  
+  @media screen and (max-width: 1210px) {
+   flex: 0 1 83%; 
+  }
   }
 
   &__text {
      @include Text-Style-6;
     flex: 0 1 100%;  
-
+text-transform: uppercase ;
   }
 }
 
@@ -74,22 +96,15 @@ left: 50%;
 .plaza-discription {
   &__body {
     background-color: #ff9419;
-    @include flex();  
+    @include flex(); 
+
     width: 100%;
     height: 100%;
   }
   &__item {
     border: 2px solid aqua;
     flex: 0 1 100%; 
-       @media screen and (max-width: 600px) {
- flex: 0 1 100%;
-    }
-    &_duble {
-      flex: 0 1 100%;
-           @media screen and (max-width: 600px) {
- flex: 0 1 100%;
-    }
-    }
+  
   }
 }
 // -----------------------------------------
@@ -97,7 +112,9 @@ left: 50%;
   background-color: #193549;
   &__body {  
 @include flex();
- 
+ @media screen and (max-width: 880px) {
+  @include jucc();
+ }
   }
   
   &__item {  
@@ -105,17 +122,30 @@ flex: 0 1 100%;
 	&_icon {
     background-color: #bee1ff;
     flex: 0 1 50%;
+    @media screen and (max-width: 880px) {
+         flex: 0 1 90%;
+         padding: 0px 0px 50% 0px;  
+
+    }
 padding: 0px 0px 30.2% 0px;  
   }
  
   &_text {
     background-color: #b29c69;
      @include Text-Style-7;
-flex: 0 1 100%; 
+    flex: 0 1 100%; 
     padding: 5% 0px 0px 9%;
+    @media screen and (max-width: 880px) {
+   padding: 0% 0% 0% 0%;
+     @include jucc();
+    }
      @include flex();
 span{ 
   flex: 0 1 31%; 
+@media screen and (max-width: 880px) {
+  flex: 0 1 70%; 
+  margin: 2% 0% 0% 0%;
+}
 background-color: #9FFF0F;
 }
   } 
@@ -123,7 +153,10 @@ background-color: #9FFF0F;
     flex: 0 1 auto;  
     padding: 5px 0px 2px 2px;      
 margin: 5% 0px 0px 9%; 
-
+@media screen and (max-width: 880px) {
+ margin: 5% 0% 0% 0%; 
+ padding: 0% 0% 0% 0%;
+}
   } 
 }
 }
@@ -134,13 +167,10 @@ margin: 5% 0px 0px 9%;
     height: 100%;
    @include flex();
    position: relative;
-   
   }
   &__left {
     flex: 0 100%; 
-    @media screen and (max-width: 600px) {
-     flex: 0 1 100%;
-    }
+ 
   }
 }
 
@@ -152,57 +182,64 @@ width: 58.21%;
 height: 102%; 
 top: 8%; 
 right: 0%; 
-a{
- position: relative;
-  position: absolute;
-     background-color: #fff;
-       border-radius: 0%;
- width: 17px; 
- height: 17px;  
- left: 50%;  top: 50%;
-@include tr(-30%,-50%,0px); 
- z-index: 4;  
- @include anim(0.2s); 
+@media screen and (max-width: 880px) {
+ top: 110%; 
+left: 50%; 
+transform: translate(-50%,0%);
+width: 90%;
+height: 100%;  
 
-&:after {
-            content: "";
-           background-color: #5da8ef;
-           position: absolute;
-           width: 30px;     
-            height: 20px;   
-            left: -109%;   
-            z-index: 4;   
-top: -89%;  
-transform: translate3d(50%, 0px, 0px)rotate(28deg) ;  
-      } 
- &:before {
-            content: "";
-           background-color: #5da8ef;
-           position: absolute;
-           width: 30px;     
-            height: 20px;   
-            left: -109%;     
-            z-index: 4;   
-            top: 77%;       
-transform: translate3d(50%, 0px, 0px)rotate(-28deg) ;   
-      } 
-      &:hover{  
-        background-color:#457DB2;
-      }
- }
- &:after {
-            content: "";
-           background-color:#5da8ef;
-           position: absolute;
-           width: 68px;
-            height: 68px; 
+}
+// a{
+//  position: relative;
+//   position: absolute;
+//      background-color: #fff;
+//        border-radius: 0%;
+//  width: 17px; 
+//  height: 17px;  
+//  left: 50%;  top: 50%;
+// @include tr(-30%,-50%,0px); 
+//  z-index: 4;  
+//  @include anim(0.2s); 
+
+// &:after {
+//             content: "";
+//            background-color: #5da8ef;
+//            position: absolute;
+//            width: 30px;     
+//             height: 20px;   
+//             left: -109%;   
+//             z-index: 4;   
+// top: -89%;  
+// transform: translate3d(50%, 0px, 0px)rotate(28deg) ;  
+//       } 
+//  &:before {
+//             content: "";
+//            background-color: #5da8ef;
+//            position: absolute;
+//            width: 30px;     
+//             height: 20px;   
+//             left: -109%;     
+//             z-index: 4;   
+//             top: 77%;       
+// transform: translate3d(50%, 0px, 0px)rotate(-28deg) ;   
+//       } 
+//       &:hover{  
+//         background-color:#457DB2;
+//       }
+//  }
+//  &:after {
+//             content: "";
+//            background-color:#5da8ef;
+//            position: absolute;
+//            width: 68px;
+//             height: 68px; 
              
-            z-index: 1; 
-            border-radius: 50%;
-left: 50%;  top: 50%;
-@include tr(-50%,-50%,0px);
-      }
- 
+//             z-index: 1; 
+//             border-radius: 50%;
+// left: 50%;  top: 50%;
+// @include tr(-50%,-50%,0px);
+//       }
 }
 
 // ---------------------------------------------
@@ -210,7 +247,7 @@ left: 50%;  top: 50%;
   border: 2px solid #4d2342;
   background-color: #3ad900;
 cursor: pointer; 
-  
+  margin: 0 auto; 
  
   &:hover span{
    color: #5DA8EF;

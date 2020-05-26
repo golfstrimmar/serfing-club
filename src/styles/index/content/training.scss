@@ -2,12 +2,14 @@
 @import "common/variables";
 
  
-.block-trips{ 
+.training{ 
   &__body{
      position: relative;
      @include jucc();
      width: 100%;
      height: 100%;
+     padding: 14% 0% 0% 0%; 
+     
   }
 
 // ----------ширина контента-----
@@ -20,7 +22,7 @@ flex: 0 1 100%;
 
 
 // ---------управление единичными блоками---------------------
-.content-trips{
+.content-training{
   &__body {  
 position: relative;
 @include jucb();
@@ -44,14 +46,14 @@ position: relative;
 
 // =====единичный блок=========
 
-.tiny-trips{
+.tiny-training{
 width: 100%;
 height: 100%;
   &__body {  
 position: relative;
 text-align: left;
 @include flex();
-padding: 30% 0px 0px 0px;  
+padding: 30% 0px 10% 0px;   
 position: relative;
 &:after {
             content: "";
@@ -59,7 +61,7 @@ position: relative;
            position: absolute;
            width: 22px;
             height: 2px;
-            top: 42%; 
+            top: 33%;  
             left: 0;
             z-index: 2;
 

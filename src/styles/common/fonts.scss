@@ -91,7 +91,17 @@ font-stretch: normal;
   text-align: left;
   color: #333333;
 }
-
+@mixin Text-Style-19 {
+  font-family: PlayfairDisplay;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: 0.32px;
+  text-align: left;
+  color: #333333;  
+}
 
 @mixin Text-Style-3 {
   font-family: PlayfairDisplay;
@@ -242,6 +252,15 @@ font-stretch: normal;
   text-align: left;
   color: rgba(11, 12, 17, 0.9);
 
+}
+@mixin Text-Style-20 {
+  font-family: LeagueSpartan;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 7.33;
+  letter-spacing: 5.58px;
+  text-align: left;
+  color: rgba(11, 12, 17, 0.27);
 }
 // =========================================================================
 @font-face {

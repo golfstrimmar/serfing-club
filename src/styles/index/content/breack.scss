@@ -38,20 +38,20 @@ padding: 0px 9% 0px 18%;
 }
 @media screen and (max-width: 846px) {
  padding: 0px 1% 0px 1%;  
- @include jucc();
+ @include jucc(); 
  
 }
 }
 // ----ширина единичного блока-----
 &__item {  
-flex: 0 1 43%;  
+flex: 0 1 38%;  
 @media screen and (max-width: 846px) {
  flex: 0 1 90%;
 }
 }
 
 &__bord{ 
-  flex: 0 1 49%;    
+  flex: 0 1 55%;    
 padding: 0px 0px 49% 0px;
 @media screen and (max-width: 846px) {
  flex: 0 1 90%;

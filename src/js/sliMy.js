@@ -37,9 +37,6 @@ $(Document).ready(function () {
 
 
 
-
-
-
     $(Document).ready(function () {
       $(".slider-shop-js").slick({
         arrows: true,

@@ -19,7 +19,9 @@
     flex: 0 1 17%;
     position: relative;
     @include jucs();
- 
+ @media screen and (max-width: 580px) {
+ z-index: 5; 
+ }
   }
 
   &__menu {
