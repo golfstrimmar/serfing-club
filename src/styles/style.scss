@@ -17,6 +17,7 @@
 @import "index/content/breack.scss";
 @import "index/content/mail.scss";
 @import "index/content/contacts.scss";
+@import "index/content/test.scss";
 
 // Bootstrap
 // @import "node_modules/bootstrap/scss/_functions";
@@ -60,9 +61,10 @@
 
 // body{ background-color: #FF9419;}
 .wrapper {
-  overflow: hidden;
+  // overflow: hidden;
   @include fdc;
   min-height: 100vh;
+  position: relative;
   
 }
 
@@ -74,15 +76,15 @@
   left: 0;
   // z-index: 2000;
   @include fdc();
- background: url(../img/bg/lines.jpg)  no-repeat;     
-background-size: cover;
+
 }
 .container {
-  outline: 1px solid #4164ff;
+  // outline: 1px solid #4164ff;
   max-width: 1224px;
   //    padding: 0px -15px;
   margin: 0 auto;
-  background-color: #E628FF;
+   background: url(../img/bg/lines.jpg)  no-repeat;     
+background-size: cover;
 }
 
 .ibg {
