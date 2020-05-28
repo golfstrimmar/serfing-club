@@ -679,7 +679,7 @@ flex: 0 1 100%;
       flex: 0 1 100%;
       padding: 0% 0% 0% 0%;  
     }
-    &_tree {
+    &_three {
       background-color: #9fff0f;opacity: 0.8;
       @include Text-Style-7;
       line-height: 1;
@@ -798,7 +798,7 @@ height: 100%;
       flex: 0 1 100%;
       padding: 0% 0% 0% 0%;  
     }
-    &_tree {
+    &_three {
       background-color: #9fff0f;opacity: 0.8;
       @include Text-Style-7;
       line-height: 1;
@@ -860,12 +860,12 @@ height: 100%;
     padding: 0% 0% 0% 0%;
   }
   &__icon {
-    position: relative;
-    z-index: 2;
-    flex: 0 1 100%;
     background-color: #246eb9;
     opacity: 0.8;
+    position: relative;
+    z-index: 2;
     text-align: center;
+    flex: 0 1 100%;
     padding: 0% 0% 0% 0%;
   }
   &__title {
@@ -873,10 +873,10 @@ height: 100%;
     z-index: 2;
     background-color: #9fff0f;
     opacity: 0.8;
-    flex: 0 1 100%;
     @include Text-Style-7;
     line-height: 1;
     text-transform: uppercase;
+    flex: 0 1 100%;
     padding: 0% 0% 0% 0%; 
   }
   &__text {

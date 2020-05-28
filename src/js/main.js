@@ -35,6 +35,22 @@ document.documentElement.addEventListener("click", function (e) {
     $("body").removeClass("lock");
   }
 });
+// -------------burger2----------------------
+$(Document).ready(function () {
+  $(".icon-menu2").click(function (event) {
+    $(this).toggleClass("active"),
+      $(".menu2-js").toggleClass("menu2_active");
+    $("body").toggleClass("lock");
+  });
+});
+document.documentElement.addEventListener("click", function (e) {
+  if (!e.target.closest('.icon-menu2')) {
+    let user_menu = document.querySelector('.menu2-js');
+    user_menu.classList.remove('menu2_active'),
+      $('.icon-menu2').removeClass("active")
+    $("body").removeClass("lock");
+  }
+});
 
 // --------------burger-thanks---------------------
 document.documentElement.addEventListener("click", function (e) {

@@ -1,6 +1,8 @@
 @import "normalize";
 @import "common/null.scss";
 
+@import "common/net.scss";
+
 @import "common/mixins";
 @import "common/variables";
 @import "common/fonts";
@@ -8,8 +10,7 @@
 @import "common/header.scss";
 @import "common/slick.scss";
 
-
-// @import "index/content/some-block.scss";
+// @import "index/content/some-block.scss"; 
 @import "index/content/slider.scss";
 @import "index/content/discription.scss";
 @import "index/content/slider-boards.scss";
@@ -18,6 +19,7 @@
 @import "index/content/mail.scss";
 @import "index/content/contacts.scss";
 @import "index/content/test.scss";
+
 
 // Bootstrap
 // @import "node_modules/bootstrap/scss/_functions";
@@ -79,7 +81,7 @@
 
 }
 .container {
-  // outline: 1px solid #4164ff;
+  outline: 1px solid #4164ff;
   max-width: 1224px;
   //    padding: 0px -15px;
   margin: 0 auto;

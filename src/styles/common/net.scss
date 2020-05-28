@@ -1,0 +1,57 @@
+// .net{
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+// }
+// .net-line {
+//   position: absolute;
+//   width: 100%;
+//   height: 1px;
+//   background-color: #000;
+//   left: 0%;
+//   z-index: 1000;
+//   &__line1 { 
+//     height: 3px;
+//     background-color: red;   top: 121px;
+//   }
+
+//   &__line2 {
+//       height: 3px; 
+//     background-color: red;   top: 560px;
+//     } 
+//   &__line3 { 
+//                      top: 209px;
+//   }
+//   // &__line4 {   
+//   //                    top: 512px;
+//   // }
+//   // &__line5 { 
+//   //                    top: 555px;
+//   // }
+//   // &__line6 { 
+//   //                    top: 941px;
+//   // }
+// }
+// .net-column{
+//  position: absolute;
+//   width: 1px;
+//   padding: 100% 0% 0% 0%;
+//   background-color: blue;
+//   top: 0;
+//   z-index: 1000;
+//   &__col1{                        left: 217px;
+//     width: 3px;
+//     background-color: red;} 
+//   &__col2{                        left: 1120px;
+//     width: 3px;
+//     background-color: red;}
+//   &__col3{
+//                                   left: 708px;
+//   }
+//   &__col4{
+//                                   left: 785px;
+//   }
+//   // &__col5{
+//   //                                 left: 453px;
+//   // }
+// }
