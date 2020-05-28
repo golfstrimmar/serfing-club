@@ -1,149 +1,132 @@
 @import "common/mixins";
 @import "common/variables";
 
-
-
 // ====================================================
-//                  slider-shop                             
+//                  slider-shop
 // ====================================================
 .container-top {
   max-width: 1224px;
-  // max-width: 100vw; 
   margin: 0px auto;
-  // outline: 4px solid #d24a4c;
-@media screen and (max-width: 960px) {
-  max-width: 100vw; 
-}
-
+  @media screen and (max-width: 960px) {
+    max-width: 100vw;
+  }
 }
 .slider-shop {
   width: 100%;
   height: 100%;
   &__body {
-@include alic();
+    @include alic();
     width: 100%;
     height: 100%;
     position: relative;
-    padding: 16% 0px 0px 0px; 
+    padding: 16% 0px 0px 0px;
   }
   &__head {
-
-}
-&__arrows{ } 
-// ---------------------------------------------------------------
-//  !!!!!!!!!управление шириной содержимого  одного слайда!!!!!!!!!!!!!!!!!!
-&__slide {
-    max-width: 250px;
-    // max-width: 60%;  
   }
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// ---------------------------------------------------------------- 
- 
-&__slides {  
-// outline: 2px solid #d4b584;
-width: 100%;
-height: 100%;
-}
+  &__arrows {
+  }
+  // ---------------------------------------------------------------
+  //  !!!!!!!!!управление шириной содержимого  одного слайда!!!!!!!!!!!!!!!!!!
+  &__slide {
+    max-width: 250px;
+  }
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // ----------------------------------------------------------------
+
+  &__slides {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 // ---------------------------------------------------------------
 // !!!!!!!!!! управление расположением содержимого слайда!!!!!!!!!!!
 .slick-slide {
   text-align: left;
-  // text-align: center;
-  // text-align: right ;
-//  background-color: #a9afb3; 
-  // border: 2px solid #d4b584;
   flex: 0 1 20%;
   @media screen and (max-width: 620px) {
-   text-align: center;
+    text-align: center;
   }
 }
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // ---------------------------------------------
-.slider-shop-slide{
+.slider-shop-slide {
   width: 100%;
   height: 100%;
-&__body { 
-   
-position: relative;
-width: 100%; 
-height: 100%;
-// @include flex();
-padding: 0px 0px 196% 0px;
-}
-&__main {  
-  
-// flex: 0 1 100%;
-width: 100%;
-height: 100%;
-}
-&__small {  
-position: absolute;
-width: 50%; 
-height: 100%; 
-top: 50%;
-left: 86%; 
+  &__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // @include flex();
+    padding: 0px 0px 196% 0px;
+  }
+  &__main {
+    // flex: 0 1 100%;
+    width: 100%;
+    height: 100%;
+  }
+  &__small {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 50%;
+    left: 86%;
 
-@media screen and (max-width: 1224px) {
- left: 50%;
+    @media screen and (max-width: 1224px) {
+      left: 50%;
+    }
+    @media screen and (max-width: 620px) {
+      top: 1%;
+      left: 40%;
+    }
+    @media screen and (max-width: 960px) {
+      left: 12%;
+      top: 0%;
+    }
+  }
 }
-@media screen and (max-width: 620px) {
- top: 1%; 
- left: 40%;
-}
-@media screen and (max-width: 960px) {
- left: 12%; 
-  top: 0%; 
-
-}
-}
- }
 // =============шапка слайдера=============================
-.head-tiny{
-@include jucc();
-width: 100%;
-height: 100%;
-// !!!!!!!!!!!!!управление шириной шапки слайдера!!!!!!!!!!!!!!!!!!!!!!!
-&__body {  
-position: relative;
-text-align: left;
-@include flex();
-flex: 0 1 50%;  
+.head-tiny {
+  @include jucc();
+  width: 100%;
+  height: 100%;
+  // !!!!!!!!!!!!!управление шириной шапки слайдера!!!!!!!!!!!!!!!!!!!!!!!
+  &__body {
+    position: relative;
+    text-align: left;
+    @include flex();
+    flex: 0 1 50%;
+  }
 
+  &__icon {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    // background-color: #246EB9; opacity: 0.8;
+    @include Text-Style-9;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    // background-color: #9FFF0F;opacity: 0.8;
+    flex: 0 1 100%;
+    @include Text-Style-9;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    &_one {
+      // background-color: red;opacity: 0.8;
+      @include Text-Style-10;
+      line-height: 1;
+    }
+  }
 }
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- 
-&__icon {  
-position: relative;
-z-index: 2;
-flex: 0 1 100%;
-// background-color: #246EB9; opacity: 0.8;
-@include Text-Style-9;
-}
-
-&__title {  
-position: relative;
-z-index: 2;
-// background-color: #9FFF0F;opacity: 0.8;
-flex: 0 1 100%;
-@include Text-Style-9;
-line-height: 1; 
-text-transform: uppercase;
-
-}
-
-
-&__text {  
- position: relative;
-  z-index: 2;
-  flex: 0 1 100%;
-&_one {  
-// background-color: red;opacity: 0.8;
-@include Text-Style-10;
-line-height: 1;
-}
-} }
 // ===========================================
 .slider-shop-tiny {
   width: 100%;
@@ -153,31 +136,20 @@ line-height: 1;
     text-align: left;
     @include flex();
   }
-  // &__bg {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // padding: 0px 0px 10% 0px;
-  // }
 
   &__icon {
     position: relative;
     z-index: 2;
     flex: 0 1 100%;
-    // background-color: #246eb9;
-    // opacity: 0.8;
   }
 
   &__title {
     position: relative;
     z-index: 2;
-    // background-color: #9fff0f;
-    // opacity: 0.8;
     flex: 0 1 100%;
     @include Text-Style-11;
     text-transform: uppercase;
- padding: 5% 0px 0px 0px; 
+    padding: 5% 0px 0px 0px;
   }
 
   &__text {
@@ -185,74 +157,59 @@ line-height: 1;
     z-index: 2;
     flex: 0 1 100%;
     &_one {
-      // background-color: red;
-      // opacity: 0.8;
       @include Text-Style-12;
       padding: 1% 0px 0px 0px;
     }
     &_two {
-      // background-color: #193549;
-      // opacity: 0.8;
       @include Text-Style-13;
       padding: 14% 0px 0px 0px;
-       margin: 0px 0px 0px 30%;
+      margin: 0px 0px 0px 30%;
     }
-
   }
 
   &__button {
-    // background-color: #d24a4c;
-    // opacity: 0.8;
     position: relative;
     z-index: 2;
-    flex: 0 1 15%;  
-     margin: 0px 0px 0px 30%;     
+    flex: 0 1 15%;
+    margin: 0px 0px 0px 30%;
     a {
       @include jucs();
     }
     span {
-      // background-color: #9e9e9e;
       @include Text-Style-14;
       line-height: 1;
       text-transform: uppercase;
-       
-      padding: 5px 0px 3px 5px; 
 
+      padding: 5px 0px 3px 5px;
     }
   }
 }
 
-.arrows-slider-shop{
-  // @include flex(); 
-  // background-color: #246EB9; 
+.arrows-slider-shop {
   flex: 0 1 100%;
   @include juca();
-  
-  &__arrow {  
-   position: absolute;
-width: 30px;
-height: 30px;
-top: 66%; 
-transform: translate(0%,-50%);
-  
-// background-color: #D4B584; 
-  &_prev { 
- left: -5%;
- @media screen and (max-width: 1400px) {
-  left: 1%;
- }
+
+  &__arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 66%;
+    transform: translate(0%, -50%);
+    &_prev {
+      left: -5%;
+      @media screen and (max-width: 1400px) {
+        left: 1%;
+      }
+    }
+    &_next {
+      right: -5%;
+      @media screen and (max-width: 1400px) {
+        right: 1%;
+      }
+    }
+  }
 }
-&_next {  
-right: -5%;
-@media screen and (max-width: 1400px) {
-  right: 1%;
- }
-} 
- }}
 
- 
 // ====================================================
-//                  end of slider-shop                      
+//                  end of slider-shop
 // ====================================================
-
-

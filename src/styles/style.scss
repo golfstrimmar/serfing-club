@@ -51,13 +51,26 @@ background-image: url(../img/bg/bg-water.jpg);
 
 }
 .container {
-  outline: 1px solid #4164ff;
+  // outline: 1px solid #4164ff;
   max-width: 1224px;
   margin: 0 auto;
   background: url(../img/bg/lines1.png)  no-repeat;      
   background-size: cover;
+  position: relative;
+  
 &__contacts {
-max-width: 100%; 
+ background: url(../img/bg/lines1.png)  no-repeat;      
+  background-size: cover; 
+  position: absolute;
+  // background-color: red;
+  z-index: 1;  
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 50%;
+  max-width: 1224px;
+transform: translate(-50%,0%);
+
 }
 }
 

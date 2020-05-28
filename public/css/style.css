@@ -1212,9 +1212,6 @@ h1, h2, h3, h4, h5, h6 {
       right: 3%;
       top: 70%; } }
 
-.plaza-slider__arrows {
-  background-color: #282f35; }
-
 @media screen and (max-width: 1224px) {
   .item-plaza-slider {
     padding: 0px 0px 0px 20px; } }
@@ -1236,8 +1233,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   top: 0%;
   right: 0;
-  -webkit-box-shadow: -5px 5px 20px  #A3A3A3;
-  box-shadow: -5px 5px 20px  #A3A3A3; }
+  -webkit-box-shadow: -20px 10px 20px #a3a3a3;
+  box-shadow: -20px 10px 20px #a3a3a3; }
 
 .item-plaza-slider__text {
   -webkit-box-flex: 0;
@@ -1539,7 +1536,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
-  flex: 0 1 100%; }
+  flex: 0 1 100%;
+  margin: 0% 20% 0% 0%; }
+  @media screen and (max-width: 880px) {
+    .item-plaza-discription__item {
+      margin: 0% 0% 0% 0%; } }
   .item-plaza-discription__item_icon {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 50%;
@@ -1647,10 +1648,9 @@ h1, h2, h3, h4, h5, h6 {
       height: 100%; } }
 
 .button-item-plaza-discription {
-  cursor: pointer;
-  margin: 0 auto; }
+  cursor: pointer; }
   .button-item-plaza-discription:hover span {
-    color: #5DA8EF; }
+    color: #5da8ef; }
   .button-item-plaza-discription span {
     font-family: LeagueSpartan;
     font-size: 9px;
@@ -1675,7 +1675,7 @@ h1, h2, h3, h4, h5, h6 {
       top: 241%;
       left: 0;
       z-index: 2;
-      background: #B5E0FF;
+      background: #b5e0ff;
       transition: all 0.2s ease-in;
       -webkit-transition: all 0.2s ease-in;
       -moz-transition: all 0.2s ease-in;
@@ -2348,7 +2348,7 @@ h1, h2, h3, h4, h5, h6 {
       letter-spacing: 5.4px;
       text-align: left;
       color: #333333;
-      line-height: 1.5;
+      line-height: 2.5;
       text-align: center;
       text-transform: uppercase;
       -webkit-box-flex: 0;
@@ -2530,32 +2530,34 @@ h1, h2, h3, h4, h5, h6 {
         .form-link-2__input_submit input:hover {
           background-color: #d4b584; }
 
-.block-contacts__body {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 12% 20% 0% 0%; }
-  @media screen and (max-width: 1300px) {
-    .block-contacts__body {
-      padding: 5% 0% 0% 0%; } }
-
-.block-contacts__content {
-  position: relative;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%; }
+.block-contacts {
+  position: relative; }
+  .block-contacts__body {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 12% 20% 0% 0%;
+    z-index: 20; }
+    @media screen and (max-width: 1300px) {
+      .block-contacts__body {
+        padding: 5% 0% 0% 0%; } }
+  .block-contacts__content {
+    position: relative;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%; }
 
 .content-contacts__body {
   position: relative;
@@ -2731,13 +2733,24 @@ body {
   flex-direction: column; }
 
 .container {
-  outline: 1px solid #4164ff;
   max-width: 1224px;
   margin: 0 auto;
   background: url(../img/bg/lines1.png) no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   .container__contacts {
-    max-width: 100%; }
+    background: url(../img/bg/lines1.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+    max-width: 1224px;
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%); }
 
 .ibg {
   background-repeat: no-repeat;
