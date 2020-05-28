@@ -1,18 +1,13 @@
 .block-contacts{ 
   &__body{
      position: relative;
-     background-color: aqua;opacity: 0.8; 
-
      @include jucc();
      width: 100%;
      height: 100%; 
      padding: 12% 20% 0% 0%; 
-     @media screen and (max-width: 1700px) { 
-      padding: 12% 10% 0% 0%;
-     }  
+  
      @media screen and (max-width: 1300px) {
-            padding: 5% 0% 0% 0%;
-
+            padding: 5% 0% 0% 0%; 
      }
 
   }
@@ -43,10 +38,12 @@ flex: 0 1 29%;
 }
 }
 &__img{
-flex: 0 1 63%; 
+flex: 0 1 62.5%;   
+    
+
 @media screen and (max-width: 1200px) {
- flex: 0 1 100%; 
-}
+ flex: 0 1 100%;
+} 
 }
 }
 
@@ -60,7 +57,7 @@ flex: 0 1 63%;
  width: 100%; 
  height: 100%; 
 position: relative;
- padding: 66% 0% 0% 0%;   
+   padding: 66% 0% 0% 0%;
 }
   &_bg{
   
@@ -85,17 +82,14 @@ padding: 24% 0% 0% 0%;
 }    
 }
 
-
-
-
 &__text {  
 position: relative;
 z-index: 2;
-background-color: #9FFF0F;opacity: 0.8;
+// background-color: #9FFF0F;opacity: 0.8;
 flex: 0 1 100%;
   
 &_one {  
-background-color: aqua;opacity: 0.8; 
+// background-color: aqua;opacity: 0.8; 
 flex: 0 1 100%;
 @include Text-Style-20;
 line-height: 1;
@@ -117,7 +111,7 @@ line-height: 1.5;
 }
 }
 &__button {  
-background-color: #d24a4c;opacity: 0.8; 
+// background-color: #d24a4c;opacity: 0.8; 
 position: relative;
 z-index: 2;
 flex: 0 1 140px;

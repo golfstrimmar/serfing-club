@@ -35,7 +35,7 @@ padding: 250px 0px 0px 0px;
 &__title {  
 position: relative;
 z-index: 2;
-background-color: #9FFF0F;opacity: 0.8;
+// background-color: #9FFF0F;opacity: 0.8;
 flex: 0 1 100%;
 @include Text-Style-10;
 
@@ -46,7 +46,7 @@ position: relative;
 z-index: 2;
 
 &_one {  
-background-color: red;opacity: 0.8;
+// background-color: red;opacity: 0.8;
 @include Text-Style-14;
 line-height: 1.5; 
 text-align: center;
@@ -59,7 +59,7 @@ flex: 0 1 45%;
 padding: 25px 0px 0px 0px;  
 }
 &_four {  
-background-color: red;opacity: 0.4;
+// background-color: red;opacity: 0.4;
 flex: 0 1 100%;
 padding: 20px 0px 0px 0px;  
 }
@@ -142,7 +142,7 @@ padding: 20px 0px 0px 0px;
     input {
       width: 100%;
       height: 50px;
-      background-color: #5da8ef;
+      // background-color: #5da8ef;
       // border: 6px solid #222429;  
       border: none;
       @include anim(0.2s); 

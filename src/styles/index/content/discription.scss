@@ -2,15 +2,15 @@
 @import "common/variables";
 
 .discription {
-  background-color: #bb8830;
-  border: 2px solid red;
+  // background-color: #bb8830;
+  // border: 2px solid red;
 
   &__body {
     position: relative;
     width: 100%;
     height: 100%;  
     margin: 0px auto;
-    background-color: #5c4317;
+    // background-color: #5c4317;
     padding: 14% 0px 3% 0px; 
     @media screen and (max-width: 1130px) {
      padding: 8% 0px 3% 0px;  
@@ -77,7 +77,7 @@ left: 50%;
 }
 
   &__title {
-    background-color: #3dbbff;
+    // background-color: #3dbbff;
     flex: 0 1 49.83%; 
       @include Text-Style-5;
   @media screen and (max-width: 1210px) {
@@ -95,21 +95,21 @@ text-transform: uppercase ;
 // -----контейнер для единичны блоков-----------------
 .plaza-discription {
   &__body {
-    background-color: #ff9419;
+    // background-color: #ff9419;
     @include flex(); 
 
     width: 100%;
     height: 100%;
   }
   &__item {
-    border: 2px solid aqua;
+    // border: 2px solid aqua;
     flex: 0 1 100%; 
   
   }
 }
 // -----------------------------------------
 .item-plaza-discription {
-  background-color: #193549;
+  // background-color: #193549;
   &__body {  
 @include flex();
  @media screen and (max-width: 880px) {
@@ -120,7 +120,7 @@ text-transform: uppercase ;
   &__item {  
 flex: 0 1 100%;
 	&_icon {
-    background-color: #bee1ff;
+    // background-color: #bee1ff;
     flex: 0 1 50%;
     @media screen and (max-width: 880px) {
          flex: 0 1 90%;
@@ -131,7 +131,7 @@ padding: 0px 0px 30.2% 0px;
   }
  
   &_text {
-    background-color: #b29c69;
+    // background-color: #b29c69;
      @include Text-Style-7;
     flex: 0 1 100%; 
     padding: 5% 0px 0px 9%;
@@ -146,7 +146,7 @@ span{
   flex: 0 1 70%; 
   margin: 2% 0% 0% 0%;
 }
-background-color: #9FFF0F;
+// background-color: #9FFF0F;
 }
   } 
   &_button { 
@@ -175,7 +175,7 @@ margin: 5% 0px 0px 9%;
 }
 
 .right-discription-duble {
-  border: 2px solid #a6afff;
+  // border: 2px solid #a6afff;
    position: relative;
   position: absolute;
 width: 58.21%;
@@ -244,15 +244,16 @@ height: 100%;
 
 // ---------------------------------------------
 .button-item-plaza-discription {
-  border: 2px solid #4d2342;
-  background-color: #3ad900;
+  // border: 2px solid #4d2342;
+  // background-color: #3ad900;
 cursor: pointer; 
   margin: 0 auto; 
  
   &:hover span{
    color: #5DA8EF;
-&:after {background: #5da8ef;
-;}   
+&:after {
+  // background: #5da8ef;
+}   
   }
   span {
    @include Text-Style-8;

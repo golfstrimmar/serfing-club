@@ -6,12 +6,14 @@
 .footer{
 width: 100%;
 height: 100%;
-&__body {  
+
+&__body { 
+
 position: relative;
 text-align: left;
 padding: 8% 0% 13% 0%; 
 @media screen and (max-width: 650px) {
- padding: 5% 0% 13% 0%; 
+ padding: 5% 0% 8% 0%; 
 }
 }
 
@@ -20,24 +22,54 @@ padding: 8% 0% 13% 0%;
 position: relative;
 z-index: 2;
 flex: 0 1 100%;
-background-color: #246EB9; opacity: 0.8;
+// background-color: #246EB9; opacity: 0.8;
 @include jucc();
 
 }
 
 &__title { 
-background-color: #9FFF0F;opacity: 0.8;
+// background-color: #9FFF0F;opacity: 0.8;
 flex: 0 1 100%;
 @include jucc();
 padding: 3% 0% 0% 0%; 
 
 }
+&__social{
+@include jucc(); 
+padding: 5% 0% 0% 0%;
 }
+
+} 
+ 
+.social-footer{
+  &__icon{
+flex: 0 1 3%; 
+z-index: 100; 
+@media screen and (max-width: 1065px) {
+ flex: 0 1 10%; 
+} 
+@media screen and (max-width: 400px) {
+ flex: 0 1 20%;  
+}
+width: 20px;
+height: 20px;
+@include anim(0.2s);
+&:hover{
+  @include scale(1.1);
+} 
+&_slider{ 
+   flex: 0 1 20%;
+    // background-color: #B29C69;
+ }
+ }
+}
+
+
 
 .menu-footer {
 
   &__body { 
-background-color: #d24a4c;
+// background-color: #d24a4c;
 flex: 0 1 33%;
 @media screen and (max-width: 1000px) {
  flex: 0 1 50%;

@@ -3,15 +3,28 @@
     position: relative;
     width: 100%;
     height: 100%;
-    // margin: 0px auto;
-    // padding: 20px 0px 20px 0px;
-    // background-color: #d24a4c;
 
   }
 
   &__plaza {
   }
   &__arrows {
+  }
+  &__socials{
+    position: absolute;
+  // background-color: red;
+  z-index: 500;
+    width: 2%;  
+    height: 23%;   
+    top: 77%;
+    right: -5.5%;  
+  @media screen and (max-width: 1400px) {   
+       right: 3%;   
+top: 70%;
+  }
+  @include fdc();
+justify-content: space-between;
+  align-items: center;  
   }
 }
 
@@ -28,7 +41,7 @@
 }
 
 .item-plaza-slider {
-  border: 2px solid #d4b584; 
+  // border: 2px solid #d4b584;  
   @media screen and (max-width: 1224px) {
    padding: 0px 0px 0px 20px;
   }
